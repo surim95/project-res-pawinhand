@@ -1,0 +1,79 @@
+body {}
+body header {
+    width: 100%;
+    /* position: fixed; */
+}
+body header #main_header {
+    padding: 0 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+body header #main_header h1 {}
+body header #main_header h1 a {
+    width: 151px; height: 42px;
+    display: block;
+}
+body header #main_header h1 a img {
+    width: 100%;
+}
+body header #main_header nav {}
+body header #main_header nav .gnb {
+    display: flex;
+}
+body header #main_header nav .gnb li {}
+body header #main_header nav .gnb li a{
+    padding: 18px 22px;
+    display: block;
+    font-weight: 500; font-size: 1.125rem;
+}
+body header #main_header .right_wrap {}
+body header #main_header .right_wrap a {
+    display: inline-block;
+    width: 22px; height: 22px;
+    margin-right: 24px;
+}
+body header #main_header .right_wrap a:last-child {
+    margin-right: 0;
+}
+body header #main_header .right_wrap a img {}
+/* 헤더 광고 */
+body header .swiper {
+    
+}
+body header .swiper .swiper-wrapper {}
+body header .swiper .swiper-wrapper .swiper-slide {
+    background-color: #006347;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+body header .swiper .swiper-wrapper .swiper-slide .ad_bar {
+    margin: 13px 0;
+    display: inline-block;
+}
+body header .swiper .swiper-wrapper .swiper-slide .ad_bar p{
+    color: #fff; font-size: 0.875rem;
+}
+body header .swiper .swiper-wrapper .swiper-slide .ad_bar p span{
+    color: #006347; font-size: 0.75rem;
+    padding: 2px 6px;
+    background-color: #fff; border-radius: 15px;
+    margin-right: 20px;
+}
+body header .swiper .swiper-wrapper .swiper-slide .ad_bar p em{
+    color: #fff; font-size: 0.875rem; font-weight: 500;
+}
+body header .swiper .swiper-wrapper .swiper-slide .ad_close_btn{
+    margin: 13px 256px 13px 0;
+    display: block; width: 14px; height: 14px;
+    float: right;
+}
+body header .swiper .swiper-wrapper .swiper-slide .ad_close_btn img{
+    width: 100%;
+}
+/* header end */
+/* footer start */
+
+/* footer end */
