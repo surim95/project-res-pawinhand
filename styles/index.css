@@ -1,0 +1,63 @@
+main {
+    width: 100%;
+}
+/* 1행 */
+main .main_bnr_wrap {}
+main .main_bnr_wrap .swiper {}
+main .main_bnr_wrap .swiper .swiper-wrapper {}
+main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide {
+    width: 100%; height: 800px;
+    position: relative;
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide1 {
+    background: url(../images/img_main_bg_01.jpg);
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide2 {
+    background: url(../images/img_main_bg_02.jpg);
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide3 {
+    background: url(../images/img_main_bg_03.jpg);
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide4 {
+    background: url(../images/img_main_bg_04.jpg);
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide5 {
+    background: url(../images/img_main_bg_05.jpg);
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt {
+    position: absolute; top: 50%; left: 300px; transform: translateY(-50%);
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt h2 {
+    font-size: 1.75rem; font-weight: 500;
+    padding: 8px 24px;
+    border: 2px solid #000; border-radius: 25px;
+    width: max-content;
+    margin-bottom: 55px;
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt h1 {
+    font-size: 3.625rem; font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 55px;
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt p {
+    font-size: 1.375rem;
+    line-height: 1.6;
+}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide3 .main_bnr_txt h1 {color: #fff;}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide3 .main_bnr_txt h2 {color: #fff; border: 2px solid #fff;}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide3 .main_bnr_txt p {color: #fff;}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide4 .main_bnr_txt h1 {color: #D75770;}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide4 .main_bnr_txt h2 {color: #D75770; border: 2px solid #D75770;}
+main .main_bnr_wrap .swiper .swiper-wrapper .slide4 .main_bnr_txt p {color: #D75770;}
+/* swiper pagination color css */
+main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet {
+    background-color: #ddd;
+    opacity: 1;
+}
+main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #F29700;
+}
+/* 2행 */
+main .scroll {}
+main .scroll .best_container {}
+main .scroll .best_container .product_fillter{}

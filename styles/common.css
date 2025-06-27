@@ -2,13 +2,14 @@ body {}
 body header {
     width: 100%;
     /* position: fixed; */
+    background: #fff;
 }
 body header #main_header {
-    padding: 0 240px;
+    width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
 }
 body header #main_header h1 {}
 body header #main_header h1 a {
@@ -39,41 +40,103 @@ body header #main_header .right_wrap a:last-child {
 }
 body header #main_header .right_wrap a img {}
 /* 헤더 광고 */
-body header .swiper {
-    
-}
-body header .swiper .swiper-wrapper {}
-body header .swiper .swiper-wrapper .swiper-slide {
+body header  {}
+body header .ad {
     background-color: #006347;
-    width: 100%;
     text-align: center;
-    overflow: hidden;
+    position: relative;
 }
-body header .swiper .swiper-wrapper .swiper-slide .ad_bar {
-    margin: 13px 0;
-    display: inline-block;
+body header .ad .ad_bar {
+    width: 100%;
+    padding: 13px 0;
+    display: block;
 }
-body header .swiper .swiper-wrapper .swiper-slide .ad_bar p{
+body header .ad .ad_bar p{
     color: #fff; font-size: 0.875rem;
 }
-body header .swiper .swiper-wrapper .swiper-slide .ad_bar p span{
+body header .ad .ad_bar p span{
     color: #006347; font-size: 0.75rem;
     padding: 2px 6px;
     background-color: #fff; border-radius: 15px;
     margin-right: 20px;
 }
-body header .swiper .swiper-wrapper .swiper-slide .ad_bar p em{
+body header .ad .ad_bar p em{
     color: #fff; font-size: 0.875rem; font-weight: 500;
 }
-body header .swiper .swiper-wrapper .swiper-slide .ad_close_btn{
-    margin: 13px 256px 13px 0;
+body header .ad .ad_close_btn{
     display: block; width: 14px; height: 14px;
-    float: right;
+    position: absolute;
+    right: 256px; top: 13px;
 }
-body header .swiper .swiper-wrapper .swiper-slide .ad_close_btn img{
+body header .ad .ad_close_btn img{
     width: 100%;
 }
 /* header end */
 /* footer start */
-
-/* footer end */
+body footer {
+    width: 100%;
+    background: #FFE8A4;
+}
+body footer .foot  {
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    padding: 46px 0;
+}
+body footer .foot  .sns_wrap {
+    margin-bottom: 32px;
+}
+body footer .foot  .sns_wrap a{
+    width: 40px; height: 40px;
+    display: inline-block;
+    margin-right: 16px;
+}
+body footer .foot  .sns_wrap a:last-child{margin-right: 0;}
+body footer .foot  .sns_wrap a img{}
+body footer .foot  .left_wrap{}
+body footer .foot  .left_wrap .fnb{
+    display: flex;
+    width: max-content;
+    margin-bottom: 32px;
+}
+body footer .foot  .left_wrap .fnb li{
+    margin-right: 20px;
+}
+body footer .foot  .left_wrap .fnb li:last-child{margin-right: 0;}
+body footer .foot  .left_wrap .fnb li a{}
+body footer .foot  .left_wrap .contents_wrap{
+    display: flex; gap: 200px;
+}
+body footer .foot  .left_wrap .contents_wrap .contents {}
+body footer .foot  .left_wrap .contents_wrap .contents p {
+    margin-bottom: 8px;
+}
+body footer .foot  .left_wrap .contents_wrap .contents p:last-child{margin-bottom: 0;}
+body footer .foot  .left_wrap .contents_wrap .contents p em {}
+body footer .foot  .app_wrap {
+    position: absolute; top: 118px; right: 0;
+    display: flex;
+    gap: 40px;
+}
+body footer .foot  .app_wrap .app_down_btn {
+    display: flex;
+    width: 190px; height: 54px;
+    background: #000;
+    border-radius: 10px;
+    align-items: center; justify-content: center;
+}
+body footer .foot  .app_wrap .app_down_btn p {
+    margin-right: 10px;
+}
+body footer .foot  .app_wrap .app_down_btn p img {
+    width: 36px;
+}
+body footer .foot  .app_wrap .app_down_btn .btn_txt p {
+    color: #fff;
+    font-size: 0.875rem; font-weight: 300;
+}
+body footer .foot  .app_wrap .app_down_btn .btn_txt h1 {
+    color: #fff;
+    font-size: 1.438rem;
+}
+/* footer  end */
