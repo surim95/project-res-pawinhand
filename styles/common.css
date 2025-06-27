@@ -1,8 +1,9 @@
 body {}
 body header {
     width: 100%;
-    /* position: fixed; */
+    position: sticky;
     background: #fff;
+    z-index: 999;
 }
 body header #main_header {
     width: 1440px;

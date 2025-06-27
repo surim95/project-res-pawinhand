@@ -1,6 +1,9 @@
 main {
     width: 100%;
 }
+section {
+    border: 1px solid red;
+}
 /* 1행 */
 main .main_bnr_wrap {}
 main .main_bnr_wrap .swiper {}
@@ -61,3 +64,120 @@ main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet-active 
 main .scroll {}
 main .scroll .best_container {}
 main .scroll .best_container .product_fillter{}
+
+
+
+/* 4행 */
+main .ad_bnr_container{
+    width: 100%;
+    padding: 80px 0;
+}
+main .ad_bnr_container .ad_bnr {
+    margin: 0 auto;
+    width: 1440px; height: 260px;
+    background: url(../images/img_ad_001.jpg) center / cover;
+    position: relative;
+}
+main .ad_bnr_container .ad_bnr p{
+    font-size: 1.875rem; font-weight: 500;
+    line-height: 1.6;
+    position: absolute; left: 52px; top: 82px;
+}
+main .ad_bnr_container .ad_bnr p em{
+    font-weight: 500;
+    color: #F29700;
+}
+/* 5행 */
+main .pet_sup_container {
+    padding: 120px 0;
+}
+main .pet_sup_container .pet_sup {
+    width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+}
+main .pet_sup_container .pet_sup h1 {
+    font-size: 2rem; font-weight: 600;
+    margin-bottom: 120px;
+}
+main .pet_sup_container .pet_sup .pet_product_container {
+    display: flex;
+    margin-bottom: 120px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product {
+    margin-right: 80px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product:last-child {margin-right: 0;}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img {
+    width: 300px; height: 300px;
+    border-radius: 150px;
+    position: relative;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img1 {
+    background: url(../images/img_pet_001.jpg);
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img2 {
+    background: url(../images/img_pet_002.jpg);
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img3 {
+    background: url(../images/img_pet_003.jpg);
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img4 {
+    background: url(../images/img_pet_004.jpg);
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img a {
+    width: 50px; height: 50px; display: inline-block;
+    border-radius: 25px;
+    background: url(../images/icon_next_btn.png);
+    position: absolute;
+    right: 20px; bottom: 20px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt {
+    width: 186px;
+    margin: 40px auto 0;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt h2 {
+    font-size: 1.25rem; font-weight: 600; line-height: 1.4;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_txt .color_chip {
+    width: 12px; height: 12px; border-radius: 6px;
+    background: #F29700;
+    display: inline-block;
+    margin: 16px 0;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt h3 {
+    font-size: 1.5rem; font-weight: 600;
+    margin-bottom: 16px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_txt p {
+    line-height: 1.6;
+}
+main .pet_sup_container .pet_sup .more_btn {
+    width: max-content;
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 26px; border-radius: 17px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex; justify-content: center;
+}
+main .pet_sup_container .pet_sup .more_btn img {
+    margin-left: 6px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt .color_chip2 {
+    margin-left: 12px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt .color_chip3 {
+    margin-left: 12px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product2 .product_txt .color_chip2 {
+    background: #FF0000;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product2 .product_txt .color_chip3 {
+    background: #008CFF;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product3 .product_txt .color_chip1 {
+    background: #FF0000;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product3 .product_txt .color_chip2 {
+    background: #008CFF;
+}
