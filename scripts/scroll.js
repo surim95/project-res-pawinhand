@@ -23,3 +23,17 @@ const introduceScroll = new Swiper('.intro_pic',{
     }, loop:true,
     autoplay:{delay:3000},
 })
+const bestScroll = new Swiper('.best_scroll',{
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    autoplay:{delay:3000},
+    loop:true,
+    navigator:{
+        nextEl:'.scroll_section .swiper-button-next',
+        prevEl:'.scroll_section .swiper-button-prev',
+        
+    },
+    scrollbar:{
+        el:'.scroll_section .swiper-scrollbar',
+    },
+})

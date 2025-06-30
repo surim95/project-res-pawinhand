@@ -68,17 +68,16 @@ main .scroll .best_container {
     margin: 120px auto;
     display: flex;
     flex-flow: column nowrap;
-    background: yellow;
 }
 main .scroll .best_container .product_fillter {
     text-align: right;
-    background: orange;
+    margin: 0 240px 20px;
 }
 main .scroll .best_container .product_fillter a {
     font-size: 0.875rem; font-weight: 300;
 }
 main .scroll .best_container .product_fillter a:last-child {
-    margin-right: 18px;
+    margin-right: 0;
 }
 main .scroll .best_container .product_fillter a:first-child::before {
     display: none;
@@ -90,48 +89,148 @@ main .scroll .best_container .product_fillter a::before {
     margin: 0 18px;
 }
 main .scroll .best_container .best_scroll_container {
-    display: grid;
-    gap: 80px;
-    grid-template-areas:
-    'title' 'scroll'
-    'title' 'scroll_bar' 'scroll_prev_btn' 'scroll_next_btn'
-    ;
+    width: max-content; overflow: hidden;
+    background: yellow;
+    display: flex;
+    margin-left: 240px;
 }
 main .scroll .best_container .best_scroll_container .scroll_title {
-    grid-area: title;
     width: 320px; height: 515px;
-    background: url(../images/img_best_title.jpg) center / cover;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/img_best_title.jpg);
+    background-position: center;
+    background-size: cover;
     border-radius: 12px;
+    padding: 132px 30px 0 30px;
+    margin-right: 80px;
 }
-main .scroll .best_container .best_scroll_container .scroll_title h1 {}
-main .scroll .best_container .best_scroll_container .scroll_title p {}
-main .scroll .best_container .best_scroll_container .scroll_title a {}
-main .scroll .best_container .best_scroll_container .scroll_title a img {}
-main .scroll .best_container .best_scroll_container .best_scroll {
-    grid-area: scroll;
+main .scroll .best_container .best_scroll_container .scroll_title h1 {
+    color: #fff; font-size: 2rem; font-weight: 600;
+    margin-bottom: 40px;
 }
-main .scroll .best_container .best_scroll_container .best_scroll .swiper-wrapper {}
-main .scroll .best_container .best_scroll_container .best_scroll .swiper-wrapper .swiper-slide {
+main .scroll .best_container .best_scroll_container .scroll_title p {
+    color: #fff; line-height: 1.6;
+    margin-bottom: 40px;
+}
+main .scroll .best_container .best_scroll_container .scroll_title a {
+    width: 95px; height: 34px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    font-size: 0.875rem; font-weight: 500;
+    display: flex; justify-content: center; align-items: center;
+}
+main .scroll .best_container .best_scroll_container .scroll_title a img {
+    width: 14px; height: 14px;
+    margin-left: 4px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll {
+    width: 1040px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper {}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide {
     width: 280px;
-    
 }
-main .scroll .best_container .best_scroll_container .best_scroll .swiper-wrapper .slide1 {}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img {
+    position: relative;
+    margin-bottom: 24px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img .product {
+    width: 280px; height: 200px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: block;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide1 .scroll_img .product {
+    background: url(../images/img_best001.jpg) center / cover;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide2 .scroll_img .product {
+    background: url(../images/img_best002.jpg) center / cover;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide3 .scroll_img .product {
+    background: url(../images/img_best003.jpg) center / cover;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide4 .scroll_img .product {
+    background: url(../images/img_best004.jpg) center / cover;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide5 .scroll_img .product {
+    background: url(../images/img_best001.jpg) center / cover;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn {
+    width: 34px; height: 34px;
+    border-radius: 17px;
+    border: 1px solid #ddd;
+    display: block;
+    background: #fff;
+    position: absolute; right: 10px; bottom: 10px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn img {
+    width: 100%;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title {
+    margin-bottom: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title h1 {
+    font-size: 1.25rem; font-weight: 600; line-height: 1.4;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score{
+    font-size: 0.75rem;
+    display: flex; align-items: center;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score img{
+    width: 12px; height: 12px;
+    margin-right: 4px;
+
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score em{
+    margin-right: 4px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score span{}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide > p{
+    line-height: 1.2;
+    margin: 20px 0;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .tag_wrap{
+    margin-bottom: 24px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .tag_wrap p{
+    display: inline-block;
+    padding: 2px 8px;
+    background: #F29700;
+    border-radius: 12px;
+    font-size: 0.875rem; color: #fff; line-height: 1.4;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap {}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .price{
+    font-size: 1.125rem; color: #ddd;
+    text-align: right;
+    margin-bottom: 6px;
+    text-decoration: line-through;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount{}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p {
+    font-size: 1.25rem; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p:first-child {
+    margin-bottom: 12px;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p em {
+    font-weight: 600; color: #F29700;
+}
+main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p em span {
+    font-weight: 600; color: #F29700;
+    margin-left: 14px;
+}
+
 /* swiper 스크롤바, 버튼 */
-.best_scroll .swiper-scrollbar {
-    width: 888px; height: 4px;
-    grid-area:scroll_bar;
-    border: 1px solid red;
+main .scroll .best_container .best_scroll_container .scroll_section {
+    background: yellow;
 }
-.best_scroll .swiper-button-prev {
-    width: 40px; height: 40px;
-    grid-area: scroll_prev_btn;
-    border: 1px solid red;
+main .scroll .best_container .best_scroll_container .scroll_section .scroll_control_wrap {
+    width: 1040px;
 }
-.best_scroll .swiper-button-next {
-    width: 40px; height: 40px;
-    grid-area: scroll_next_btn;
-    border: 1px solid red;
-}
+main .scroll .best_container .best_scroll_container .scroll_section .scroll_control_wrap .swiper-scrollbar{}
 
 /* 4행 */
 main .ad_bnr_container{
@@ -193,11 +292,6 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_im
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img4 {
     background: url(../images/img_pet_004.jpg);
 }
-/* main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img a {
-    width: 300px; height: 300px;
-    position: absolute; left: 0; top: 0;
-    border-radius: 150px;
-} */
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img img{
     width: 50px; height: 50px; display: inline-block;
     border-radius: 25px;    
@@ -281,6 +375,8 @@ main .magazine_wrap .magazine_container .magazine_left .title_img {
     width: 306px; height: 416px;
     background: url(../images/img_magazine001.jpg) center / cover;
     margin-right: 30px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
 }
 main .magazine_wrap .magazine_container .magazine_left .magazine_contents {
     text-align: left;
@@ -350,7 +446,7 @@ main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .
     width: 200px;
     background-position: center;
     background-size: cover;
-    
+    border: 1px solid #f0f0f0;
 }
 main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide:last-child {
     margin-right: 0;
