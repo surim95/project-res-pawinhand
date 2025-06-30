@@ -1,3 +1,11 @@
+/* 폰트 */
+@font-face {
+    font-family: 'LeferiPoint-SpecialA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 폰트 */
 body {}
 body header {
     width: 100%;

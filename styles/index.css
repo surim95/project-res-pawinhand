@@ -61,11 +61,77 @@ main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet-active 
     background-color: #F29700;
 }
 /* 2행 */
-main .scroll {}
-main .scroll .best_container {}
-main .scroll .best_container .product_fillter{}
-
-
+main .scroll {
+    text-align: left;
+}
+main .scroll .best_container {
+    margin: 120px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    background: yellow;
+}
+main .scroll .best_container .product_fillter {
+    text-align: right;
+    background: orange;
+}
+main .scroll .best_container .product_fillter a {
+    font-size: 0.875rem; font-weight: 300;
+}
+main .scroll .best_container .product_fillter a:last-child {
+    margin-right: 18px;
+}
+main .scroll .best_container .product_fillter a:first-child::before {
+    display: none;
+}
+main .scroll .best_container .product_fillter a::before {
+    content: ''; display: inline-block;
+    width: 1px; height: 8px;
+    background: #000;
+    margin: 0 18px;
+}
+main .scroll .best_container .best_scroll_container {
+    display: grid;
+    gap: 80px;
+    grid-template-areas:
+    'title' 'scroll'
+    'title' 'scroll_bar' 'scroll_prev_btn' 'scroll_next_btn'
+    ;
+}
+main .scroll .best_container .best_scroll_container .scroll_title {
+    grid-area: title;
+    width: 320px; height: 515px;
+    background: url(../images/img_best_title.jpg) center / cover;
+    border-radius: 12px;
+}
+main .scroll .best_container .best_scroll_container .scroll_title h1 {}
+main .scroll .best_container .best_scroll_container .scroll_title p {}
+main .scroll .best_container .best_scroll_container .scroll_title a {}
+main .scroll .best_container .best_scroll_container .scroll_title a img {}
+main .scroll .best_container .best_scroll_container .best_scroll {
+    grid-area: scroll;
+}
+main .scroll .best_container .best_scroll_container .best_scroll .swiper-wrapper {}
+main .scroll .best_container .best_scroll_container .best_scroll .swiper-wrapper .swiper-slide {
+    width: 280px;
+    
+}
+main .scroll .best_container .best_scroll_container .best_scroll .swiper-wrapper .slide1 {}
+/* swiper 스크롤바, 버튼 */
+.best_scroll .swiper-scrollbar {
+    width: 888px; height: 4px;
+    grid-area:scroll_bar;
+    border: 1px solid red;
+}
+.best_scroll .swiper-button-prev {
+    width: 40px; height: 40px;
+    grid-area: scroll_prev_btn;
+    border: 1px solid red;
+}
+.best_scroll .swiper-button-next {
+    width: 40px; height: 40px;
+    grid-area: scroll_next_btn;
+    border: 1px solid red;
+}
 
 /* 4행 */
 main .ad_bnr_container{
@@ -106,12 +172,14 @@ main .pet_sup_container .pet_sup .pet_product_container {
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product {
     margin-right: 80px;
+    width: max-content; height: max-content;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product:last-child {margin-right: 0;}
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img {
     width: 300px; height: 300px;
     border-radius: 150px;
     position: relative;
+    display: block;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img1 {
     background: url(../images/img_pet_001.jpg);
@@ -125,16 +193,20 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_im
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img4 {
     background: url(../images/img_pet_004.jpg);
 }
-main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img a {
+/* main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img a {
+    width: 300px; height: 300px;
+    position: absolute; left: 0; top: 0;
+    border-radius: 150px;
+} */
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img img{
     width: 50px; height: 50px; display: inline-block;
-    border-radius: 25px;
-    background: url(../images/icon_next_btn.png);
-    position: absolute;
-    right: 20px; bottom: 20px;
+    border-radius: 25px;    
+    position: absolute; right: 20px; bottom: 20px;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt {
     width: 186px;
     margin: 40px auto 0;
+    display: block;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt h2 {
     font-size: 1.25rem; font-weight: 600; line-height: 1.4;
@@ -152,15 +224,16 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_t
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_txt p {
     line-height: 1.6;
 }
-main .pet_sup_container .pet_sup .more_btn {
-    width: max-content;
+.more_b_btn {
+    width: 107px; height: 34px;
     font-size: 0.875rem; font-weight: 500;
-    padding: 10px 26px; border-radius: 17px;
+    border-radius: 17px;
     border: 1px solid #000;
     margin: 0 auto;
-    display: flex; justify-content: center;
+    display: flex; justify-content: center; align-items: center;
 }
-main .pet_sup_container .pet_sup .more_btn img {
+.more_b_btn img {
+    width: 12px; height: 12px;
     margin-left: 6px;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt .color_chip2 {
@@ -180,4 +253,286 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product3 .product_t
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product3 .product_txt .color_chip2 {
     background: #008CFF;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product1,
+main .pet_sup_container .pet_sup .pet_product_container .pet_product4 {
+    margin-top: 120px;
+}
+/* 6행 magazine */
+main .magazine_wrap {
+    text-align: center;
+    padding: 120px 0;
+}
+main .magazine_wrap h1 {
+    font-size: 2rem; font-weight: 600;
+    margin-bottom: 80px;
+}
+main .magazine_wrap .magazine_container {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; align-items: center;
+}
+main .magazine_wrap .magazine_container .magazine_left {
+    display: flex;
+    margin-right: 34px;
+}
+main .magazine_wrap .magazine_container .magazine_left .title_img {
+    width: 306px; height: 416px;
+    background: url(../images/img_magazine001.jpg) center / cover;
+    margin-right: 30px;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents {
+    text-align: left;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents h1 {
+    font-family: 'LeferiPoint-SpecialA', sans-serif;
+    margin: 52px 0 16px;
+    font-size: 1.75rem;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents h2 {
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents .writer {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-bottom: 16px;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 52px;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents .m_list {
+    font-size: 0.875rem; line-height: 1.2;
+    margin-bottom: 10px;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents .m_list:last-of-type {
+    margin-bottom: 16px;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_info_btn {
+    width: 102px; line-height: 30px;
+    background: #F29700;
+    color: #fff; font-size: 0.875rem; font-weight: 500;
+    border-radius: 15px;
+    display: flex; justify-content: center; align-items: center;
+}
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_info_btn img {}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap {
+    width: 800px; height: 272px;
+    position: relative;
+}
+/* magazine 버튼 */
+.magazine_swiper_wrap .swiper-button-prev {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next_active.png) center / cover;
+    transform: scaleX(-1) translateX(11px);
+}
+.magazine_swiper_wrap .swiper-button-prev::after {
+    display: none;
+}
+.magazine_swiper_wrap .swiper-button-next {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next_active.png) center / cover;
+    transform: translateX(11px);
+}
+.magazine_swiper_wrap .swiper-button-next::after {
+    display: none;
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll {
+    width: 660px; height: 272px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper {}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide {
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide:last-child {
+    margin-right: 0;
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide1 {
+    background-image: url(../images/img_magazine002.jpg);
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide2 {
+    background-image: url(../images/img_magazine003.jpg);
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide3 {
+    background-image: url(../images/img_magazine004.jpg);
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide4 {
+    background-image: url(../images/img_magazine005.jpg);
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide5 {
+    background-image: url(../images/img_magazine006.jpg);
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide6 {
+    background-image: url(../images/img_magazine007.jpg);
+}
+main .magazine_wrap .magazine_container .magazine_bg {
+    width: 694px; height: 211px;
+    background: url(../images/img_bg001.png) bottom / cover;
+    position: absolute; right: 51px; bottom: 6px; 
+}
+
+/* 7행 review */
+main .review {
+    text-align: center;
+    padding: 120px 0;
+}
+main .review .review_container {}
+main .review .review_container  h1 {
+    font-size: 2rem; font-weight: 600;
+    margin-bottom: 80px;
+}
+main .review .review_container .review_wrap {}
+main .review .review_container .review_wrap .review_list_wrap {
+    width: 1440px;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list {
+    display: inline-block;
+    width: 320px; height: 556px;
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list .review_img {
+    border-radius: 10px;
+    width: 320px; height: 400px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 28px;
+}
+main .review .review_container .review_wrap .review_list_wrap .list1 .review_img{
+    background-image: url(../images/img_review001.jpg);
+}
+main .review .review_container .review_wrap .review_list_wrap .list2 .review_img{
+    background-image: url(../images/img_review002.jpg);
+}
+main .review .review_container .review_wrap .review_list_wrap .list3 .review_img{
+    background-image: url(../images/img_review003.jpg);
+}
+main .review .review_container .review_wrap .review_list_wrap .list4 .review_img{
+    background-image: url(../images/img_review004.jpg);
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list .review_contents {
+    height: 44px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;/* 최대 줄 수 (여기선 2줄) */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list .user_info {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list .user_info span {
+    color: #aaa;
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list .user_info span::after {
+    content: ''; display: inline-block;
+    width: 1px; height: 10px;
+    background-color: #aaa;
+    margin: 0 8px;
+}
+main .review .review_container .review_wrap .review_list_wrap .review_list .review_product {}
+main .review .review_container .review_wrap .review_list_wrap .review_list .review_product span {
+    width: 100%; height: 1px;
+    background: #f5f5f5;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/* 8행 포인핸드 소개 */
+main .introduce_brand {
+    padding-top: 100px;
+}
+main .introduce_brand .intro_container{}
+main .introduce_brand .intro_container .intro_scroll {
+    display: flex;
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper {
+    width: 960px; height: 560px;
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .swiper-slide::before{
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .swiper-slide {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .slide1 {
+    background-image: url(../images/img_intro001.jpg);
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .slide2 {
+    background-image: url(../images/img_intro002.jpg);
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .slide3 {
+    background-image: url(../images/img_intro003.jpg);
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .slide4 {
+    background-image: url(../images/img_intro004.jpg);
+}
+main .introduce_brand .intro_container .intro_scroll .swiper-wrapper .slide5 {
+    background-image: url(../images/img_intro005.jpg);
+}
+/* 버튼 디자인 변경 */
+.intro_pic > .swiper-button-next {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next.png) center / cover;
+}
+.intro_pic > .swiper-button-prev {
+    width: 40px; height: 40px;
+    background: url(../images/icon_prev.png) center / cover;
+}
+.intro_pic > .swiper-button-next::after {
+    display: none;
+}
+.intro_pic > .swiper-button-prev::after {
+    display: none;
+}
+
+main .introduce_brand .intro_container .intro_scroll .introduce_contents {
+    width: 960px; height: 560px;
+    text-align: center;
+    background: #F29700;
+}
+main .introduce_brand .intro_container .intro_scroll .introduce_contents p {
+    font-size: 1.625rem; font-weight: 700;
+    color: #fff; line-height: 1.8;
+    margin-top: 80px;
+}
+main .introduce_brand .intro_container .intro_scroll .introduce_contents h1 {
+    margin: 80px 0;
+}
+main .introduce_brand .intro_container .intro_scroll .introduce_contents h1 img {
+    width: 100px; height: 100px;
+}
+main .introduce_brand .intro_container .intro_scroll .introduce_contents .more_brand_btn {
+    width: 221px; height: 46px;
+    display: flex;
+    justify-content: center; align-items: center;
+    font-size: 1.125rem; font-weight: 500;
+    color: #fff;
+    border: 1px solid #fff; border-radius: 23px;
+    margin: 0 auto;
+}
+main .introduce_brand .intro_container .intro_scroll .introduce_contents .more_brand_btn img {
+    width: 18px; height: 18px;
+    margin-left: 6px;
 }
