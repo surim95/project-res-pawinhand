@@ -1,9 +1,7 @@
 main {
     width: 100%;
 }
-section {
-    border: 1px solid red;
-}
+section {}
 /* 1행 */
 main .main_bnr_wrap {}
 main .main_bnr_wrap .swiper {}
@@ -60,41 +58,40 @@ main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet {
 main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #F29700;
 }
-/* 2행 */
+/* 2행 best */
 main .scroll {
     text-align: left;
 }
-main .scroll .best_container {
+main .scroll .main_swiper {
     margin: 120px auto;
     display: flex;
     flex-flow: column nowrap;
 }
-main .scroll .best_container .product_fillter {
+main .scroll .main_swiper .product_fillter {
     text-align: right;
     margin: 0 240px 20px;
 }
-main .scroll .best_container .product_fillter a {
+main .scroll .main_swiper .product_fillter a {
     font-size: 0.875rem; font-weight: 300;
 }
-main .scroll .best_container .product_fillter a:last-child {
+main .scroll .main_swiper .product_fillter a:last-child {
     margin-right: 0;
 }
-main .scroll .best_container .product_fillter a:first-child::before {
+main .scroll .main_swiper .product_fillter a:first-child::before {
     display: none;
 }
-main .scroll .best_container .product_fillter a::before {
+main .scroll .main_swiper .product_fillter a::before {
     content: ''; display: inline-block;
     width: 1px; height: 8px;
     background: #000;
     margin: 0 18px;
 }
-main .scroll .best_container .best_scroll_container {
+main .scroll .main_swiper .scroll_container {
     width: max-content; overflow: hidden;
-    background: yellow;
     display: flex;
     margin-left: 240px;
 }
-main .scroll .best_container .best_scroll_container .scroll_title {
+main .scroll .best_container .scroll_container .scroll_title {
     width: 320px; height: 515px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/img_best_title.jpg);
     background-position: center;
@@ -103,15 +100,15 @@ main .scroll .best_container .best_scroll_container .scroll_title {
     padding: 132px 30px 0 30px;
     margin-right: 80px;
 }
-main .scroll .best_container .best_scroll_container .scroll_title h1 {
+main .scroll .main_swiper .scroll_container .scroll_title h1 {
     color: #fff; font-size: 2rem; font-weight: 600;
     margin-bottom: 40px;
 }
-main .scroll .best_container .best_scroll_container .scroll_title p {
+main .scroll .main_swiper .scroll_container .scroll_title p {
     color: #fff; line-height: 1.6;
     margin-bottom: 40px;
 }
-main .scroll .best_container .best_scroll_container .scroll_title a {
+main .scroll .main_swiper .scroll_container .scroll_title a {
     width: 95px; height: 34px;
     color: #fff;
     border: 1px solid #fff;
@@ -119,43 +116,47 @@ main .scroll .best_container .best_scroll_container .scroll_title a {
     font-size: 0.875rem; font-weight: 500;
     display: flex; justify-content: center; align-items: center;
 }
-main .scroll .best_container .best_scroll_container .scroll_title a img {
+main .scroll .main_swiper .scroll_container .scroll_title a img {
     width: 14px; height: 14px;
     margin-left: 4px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll {
     width: 1040px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper {}
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper {}
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide {
     width: 280px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img {
     position: relative;
     margin-bottom: 24px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img .product {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img .product {
     width: 280px; height: 200px;
     border-radius: 10px;
     border: 1px solid #ddd;
     display: block;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide1 .scroll_img .product {
+/* 상품개별이미지 best */
+main .scroll .best_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide1 .scroll_img .product {
     background: url(../images/img_best001.jpg) center / cover;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide2 .scroll_img .product {
+main .scroll .best_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide2 .scroll_img .product {
     background: url(../images/img_best002.jpg) center / cover;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide3 .scroll_img .product {
+main .scroll .best_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide3 .scroll_img .product {
     background: url(../images/img_best003.jpg) center / cover;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide4 .scroll_img .product {
+main .scroll .best_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide4 .scroll_img .product {
     background: url(../images/img_best004.jpg) center / cover;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .slide5 .scroll_img .product {
-    background: url(../images/img_best001.jpg) center / cover;
+main .scroll .best_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide5 .scroll_img .product {
+    background: url(../images/img_best005.jpg) center / cover;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn {
+main .scroll .best_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide6 .scroll_img .product {
+    background: url(../images/img_best006.jpg) center / cover;
+}
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn {
     width: 34px; height: 34px;
     border-radius: 17px;
     border: 1px solid #ddd;
@@ -163,74 +164,178 @@ main .scroll .best_container .best_scroll_container .scroll_section .best_scroll
     background: #fff;
     position: absolute; right: 10px; bottom: 10px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn img {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn img {
     width: 100%;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .title {
     margin-bottom: 20px;
     display: flex; justify-content: space-between; align-items: center;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title h1 {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .title h1 {
     font-size: 1.25rem; font-weight: 600; line-height: 1.4;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score{
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .title .score{
     font-size: 0.75rem;
     display: flex; align-items: center;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score img{
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .title .score img{
     width: 12px; height: 12px;
     margin-right: 4px;
 
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score em{
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .title .score em{
     margin-right: 4px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .title .score span{}
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide > p{
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .title .score span{}
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide > p{
     line-height: 1.2;
     margin: 20px 0;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .tag_wrap{
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .tag_wrap{
     margin-bottom: 24px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .tag_wrap p{
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .tag_wrap p{
     display: inline-block;
     padding: 2px 8px;
     background: #F29700;
     border-radius: 12px;
     font-size: 0.875rem; color: #fff; line-height: 1.4;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap {}
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .price{
-    font-size: 1.125rem; color: #ddd;
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap {}
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap .price{
+    font-size: 1.25rem; font-weight: 600;
     text-align: right;
-    margin-bottom: 6px;
-    text-decoration: line-through;
+    margin-top: 48px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount{}
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap .discount{}
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p {
     font-size: 1.25rem; font-weight: 600;
     display: flex; justify-content: space-between; align-items: center;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p:first-child {
-    margin-bottom: 12px;
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p:first-child {
+    margin-bottom: 6px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p em {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p em {
     font-weight: 600; color: #F29700;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .best_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p em span {
+main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .price_wrap .discount p em span {
     font-weight: 600; color: #F29700;
     margin-left: 14px;
 }
+/* 할인 시 원가 스타일 */
+.del_price {
+    font-size: 1.125rem !important; 
+    color: #ddd;
+    margin-top: 0 !important;
+    margin-bottom: 6px;
+    text-decoration: line-through;
+}
 
 /* swiper 스크롤바, 버튼 */
-main .scroll .best_container .best_scroll_container .scroll_section {
-    background: yellow;
+main .scroll .main_swiper .scroll_container .scroll_section {}
+main .scroll .best_container .scroll_container .scroll_section .scroll_control_wrap {
+    width: 1040px; height: 54px;
+    position: relative;
+    bottom: -12px;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .scroll_control_wrap {
-    width: 1040px;
+/* best swiper button, 스크롤바 디자인 변경 */
+.scroll_section .scroll_control_wrap .swiper-scrollbar{
+    width: 888px;
+    bottom: 18px;
+    left: 0;
 }
-main .scroll .best_container .best_scroll_container .scroll_section .scroll_control_wrap .swiper-scrollbar{}
+.scroll_section .scroll_control_wrap .swiper-scrollbar .swiper-scrollbar-drag{
+    background: #F29700;
+}
+.scroll_section .scroll_control_wrap .scroll_control_btn{
+    position: absolute; right: 20px; bottom: 0;
+    width: 94px; height: 40px;
+}
+.scroll_section .swiper-button-next {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next_active.png) center / cover;
+    margin-top: 0; top: 0; right: 0;
+}
+.scroll_section .swiper-button-prev {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next_active.png) center / cover;
+    transform: scaleX(-1);
+    margin-top: 0; top: 0; left: 0;
+}
+.scroll_section .swiper-button-next::after {
+    display: none;
+}
+.scroll_section .swiper-button-prev::after {
+    display: none;
+}
+/* 3행 support */
+/* 상품개별이미지 support */
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide1 .scroll_img .product {
+    background: url(../images/img_sup001.jpg) center / cover;
+}
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide2 .scroll_img .product {
+    background: url(../images/img_sup002.jpg) center / cover;
+}
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide3 .scroll_img .product {
+    background: url(../images/img_sup003.jpg) center / cover;
+}
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide4 .scroll_img .product {
+    background: url(../images/img_sup004.jpg) center / cover;
+}
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide5 .scroll_img .product {
+    background: url(../images/img_sup005.jpg) center / cover;
+}
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .slide6 .scroll_img .product {
+    background: url(../images/img_sup006.jpg) center / cover;
+}
+/* support title css */
+main .scroll .support_container .scroll_container .scroll_title {
+    width: 320px; height: 515px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/img_sup_title.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    padding: 132px 30px 0 30px;
+    margin-left: 80px;
+}
+/* support swiper button, 스크롤바 디자인 변경 */
+.support_container .scroll_section .support_scroll .scroll_title {
+    margin-right: 0;
+    margin-left: 80px;
+}
+main .scroll .support_container .scroll_container .scroll_section .scroll_control_wrap {
+    width: 1040px; height: 54px;
+    position: relative;
+    bottom: -32px;
+}
+.support_container .scroll_section .scroll_control_wrap .swiper-scrollbar{
+    width: 888px;
+    bottom: 18px;
+    left: 151px;
+}
+.support_container  .scroll_section .scroll_control_wrap .swiper-scrollbar .swiper-scrollbar-drag{
+    background: #F29700;
+}
+.support_container  .scroll_section .scroll_control_wrap .scroll_control_btn{
+    position: absolute; left: 20px; bottom: 0;
+}
+.support_container  .scroll_section .swiper-button-next {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next_active.png) center / cover;
+    margin-top: 0; top: 0; right: 0;
+}
+.support_container  .scroll_section .swiper-button-prev {
+    width: 40px; height: 40px;
+    background: url(../images/icon_next_active.png) center / cover;
+    transform: scaleX(-1);
+    margin-top: 0; top: 0; left: 0;
+}
+.support_container  .scroll_section .swiper-button-next::after {
+    display: none;
+}
+.support_container  .scroll_section .swiper-button-prev::after {
+    display: none;
+}
 
 /* 4행 */
 main .ad_bnr_container{

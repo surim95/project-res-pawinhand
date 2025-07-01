@@ -28,12 +28,26 @@ const bestScroll = new Swiper('.best_scroll',{
     spaceBetween: 50,
     autoplay:{delay:3000},
     loop:true,
-    navigator:{
-        nextEl:'.scroll_section .swiper-button-next',
-        prevEl:'.scroll_section .swiper-button-prev',
+    navigation:{
+        nextEl:'.best_container .swiper-button-next',
+        prevEl:'.best_container .swiper-button-prev',
         
     },
     scrollbar:{
-        el:'.scroll_section .swiper-scrollbar',
+        el:'.best_container .swiper-scrollbar',
+    },
+})
+const supportScroll = new Swiper('.support_scroll',{
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    autoplay:{delay:3000},
+    loop:true,
+    navigation:{
+        nextEl:'.support_container .swiper-button-next',
+        prevEl:'.support_container .swiper-button-prev',
+        
+    },
+    scrollbar:{
+        el:'.support_container .swiper-scrollbar',
     },
 })
