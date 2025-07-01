@@ -3,13 +3,6 @@
 /* Tablet 1024~761 */
 /* Mobile 760~320 */
 @media screen and (max-width: 1024px) {
-    body {
-        max-width: 1024px;
-        min-width: 761px;
-    }
-    body header {
-        width: 100%;
-    }
     body header #main_header {
         position: relative;
         padding: 20px;
@@ -52,5 +45,25 @@
     }
     body header .ad .ad_close_btn{
         right: 60px;
+    }
+    main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide {
+        height: 500px;
+    }
+    main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt {
+        left: 60px;
+    }
+    main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt h2 {
+        font-size: 0.75rem; font-weight: 500;
+        border: 1px solid #000; border-radius: 17px;
+        margin-bottom: 12px;
+    }
+    main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt h1 {
+        font-size: 1.875rem; font-weight: 600;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+    main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt p {
+        font-size: 0.875rem;
+        line-height: 1.4;
     }
 }
