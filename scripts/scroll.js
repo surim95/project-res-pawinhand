@@ -25,7 +25,6 @@ const introduceScroll = new Swiper('.intro_pic',{
 })
 const bestScroll = new Swiper('.best_scroll',{
     slidesPerView: 'auto',
-    spaceBetween: 50,
     /* autoplay:{delay:3000}, */
     loop:true,
     navigation:{
@@ -38,9 +37,9 @@ const bestScroll = new Swiper('.best_scroll',{
 })
 const supportScroll = new Swiper('.support_scroll',{
     slidesPerView: 'auto',
-    /* autoplay:{delay:3000,
+    autoplay:{delay:3000,
         reverseDirection:true,
-    }, */
+    },
     loop:true,
     navigation:{
         nextEl:'.support_container .swiper-button-next',

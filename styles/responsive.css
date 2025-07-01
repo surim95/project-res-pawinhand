@@ -3,6 +3,9 @@
 /* Tablet 1024~761 */
 /* Mobile 760~320 */
 @media screen and (max-width: 1024px) {
+    main .scroll {
+        padding: 60px 0;
+    }
     body header #main_header {
         position: relative;
         padding: 20px;
@@ -65,5 +68,150 @@
     main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide .main_bnr_txt p {
         font-size: 0.875rem;
         line-height: 1.4;
+    }
+    main .scroll .best_container .scroll_container {
+        grid-template-areas: 
+        'title1'
+        'scroll1'
+        ;
+    }
+    main .scroll .best_container .scroll_container .scroll_title {
+        width: 640px; height: 349px;
+        border-radius: 12px;
+        padding: 75px 30px;
+        margin: 0 auto 40px;
+    }
+    main .scroll .main_swiper .scroll_container .scroll_section {
+        width: 900px;
+    }
+    main .scroll .main_swiper .scroll_container .scroll_section .main_scroll {
+        background: yellow;
+    }
+    main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide {
+        margin-right: 30px;
+    }
+    .scroll_section .scroll_control_wrap .scroll_control_btn{
+        display: none;
+    }
+    main .scroll .support_container .scroll_container {
+        grid-template-areas: 
+        'title2'
+        'scroll2'
+        ;
+    }
+    main .scroll .support_container .scroll_container .scroll_title {
+        width: 640px; height: 349px;
+        padding: 75px 30px;
+        margin-left: 80px;
+        margin: 0 auto 40px;
+    }
+    main .scroll .support_container .scroll_container .scroll_section {
+        width: 900px;
+    }
+    main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper {
+        flex-flow: row;
+    }
+    main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    main .ad_bnr_container{
+        padding: 60px 0;
+    }
+    main .ad_bnr_container .ad_bnr {
+        width: 900px; height: 213px;
+        background: url(../images/img_ad_002.jpg) center / cover;
+    }
+    main .ad_bnr_container .ad_bnr p{
+        font-size: 1.5rem;
+        top: 68px;
+    }
+    main .ad_bnr_container .ad_bnr p em{
+        font-weight: 500;
+        color: #F29700;
+    }
+    main .pet_sup_container {
+        padding: 60px 0;
+    }
+    main .pet_sup_container .pet_sup {
+        width: max-content;
+        text-align: center;
+        margin: 0 auto;
+    }
+    main .pet_sup_container .pet_sup h1 {
+        font-size: 1.625rem;
+        margin-bottom: 60px;
+    }
+    main .pet_sup_container .pet_sup .pet_product_container .pet_product {
+        margin-right: 60px;
+    }
+    main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img {
+        width: 200px; height: 200px;
+    }
+    main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img .product_next{
+        right: 0; bottom: 0;
+    }
+    main .pet_sup_container .pet_sup .pet_product_container .pet_product1,
+    main .pet_sup_container .pet_sup .pet_product_container .pet_product4 {
+        margin-top: 0;
+    }
+    main .pet_sup_container .pet_sup .pet_product_container {
+        margin-bottom: 60px;
+    }
+    main .magazine_wrap {
+        padding: 60px 0;
+    }
+    main .magazine_wrap h1 {
+        font-size: 1.625rem;
+        margin-bottom: 60px;
+    }
+    main .magazine_wrap .magazine_container .magazine_swiper_wrap {
+        display: none;
+    }
+    main .review {
+        padding: 60px 0;
+    }
+    main .review .review_container  h1 {
+        font-size: 1.625rem;
+        margin-bottom: 60px;
+    }
+    main .review .review_container .review_wrap .review_list_wrap {
+        width: 900px;
+        margin: 0 auto 60px;
+    }
+    main .review .review_container .review_wrap .review_list_wrap .review_list {
+        width: 280px; height: 520px;
+    }
+    main .review .review_container .review_wrap .review_list_wrap .review_list .review_img {
+        width: 280px; height: 350px;
+    }
+    main .review .review_container .review_wrap .review_list_wrap .list4 {
+        display: none;
+    }
+    main .introduce_brand {
+        padding-top: 0;
+    }
+    main .introduce_brand .intro_container .intro_scroll {
+        flex-flow: column;
+    }
+    main .introduce_brand .intro_container .intro_scroll .swiper-wrapper {
+        width: 1024px;
+    }
+    main .introduce_brand .intro_container .intro_scroll .introduce_contents {
+        width: 1024px;
+        text-align: center;
+        background: #F29700;
+    }
+    body footer .foot  {
+        width: 904px;
+        padding: 60px 0;
+        display: flex; flex-flow: column;
+    }
+    body footer .foot  .left_wrap .contents_wrap{
+        gap: 376px;
+    }
+    body footer .foot  .app_wrap {
+        position: static;
+        margin-top: 40px;
     }
 }

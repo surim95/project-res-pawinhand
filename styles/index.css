@@ -1,5 +1,5 @@
 body * {
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 main {}
 section {}
@@ -62,15 +62,18 @@ main .main_bnr_wrap .swiper .swiper-pagination .swiper-pagination-bullet-active 
 /* 2행 best */
 main .scroll {
     text-align: left;
+    padding: 120px 0;
 }
 main .scroll .main_swiper {
-    margin: 120px auto;
+    width: max-content;
+    margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
+    align-items: flex-end;
 }
 main .scroll .main_swiper .product_fillter {
-    text-align: right;
-    margin: 0 240px 20px;
+    width: max-content;
+    margin: 0 20px 20px 0;
 }
 main .scroll .main_swiper .product_fillter a {
     font-size: 0.875rem; font-weight: 300;
@@ -90,7 +93,6 @@ main .scroll .main_swiper .product_fillter a::before {
 main .scroll .main_swiper .scroll_container {
     width: max-content; overflow: hidden;
     display: grid;
-    margin-left: 240px;
 }
 main .scroll .best_container .scroll_container {
     grid-template-areas: 
@@ -145,6 +147,7 @@ main .scroll .main_swiper .scroll_container .scroll_section .main_scroll {
 main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper {}
 main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide {
     width: 280px;
+    margin-right: 50px;
 }
 main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img {
     position: relative;
@@ -430,16 +433,16 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_im
     display: block;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img1 {
-    background: url(../images/img_pet_001.jpg);
+    background: url(../images/img_pet_001.jpg) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img2 {
-    background: url(../images/img_pet_002.jpg);
+    background: url(../images/img_pet_002.jpg) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img3 {
-    background: url(../images/img_pet_003.jpg);
+    background: url(../images/img_pet_003.jpg) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img4 {
-    background: url(../images/img_pet_004.jpg);
+    background: url(../images/img_pet_004.jpg) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img .product_next{
     width: 50px; height: 50px;
