@@ -1,13 +1,11 @@
-main {
-    width: 100%;
-}
+main {}
 section {}
 /* 1행 */
 main .main_bnr_wrap {}
 main .main_bnr_wrap .swiper {}
 main .main_bnr_wrap .swiper .swiper-wrapper {}
 main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide {
-    width: 100%; height: 800px;
+    max-width: 1920px; height: 800px;
     position: relative;
 }
 main .main_bnr_wrap .swiper .swiper-wrapper .slide1 {
@@ -88,8 +86,13 @@ main .scroll .main_swiper .product_fillter a::before {
 }
 main .scroll .main_swiper .scroll_container {
     width: max-content; overflow: hidden;
-    display: flex;
+    display: grid;
     margin-left: 240px;
+}
+main .scroll .best_container .scroll_container {
+    grid-template-areas: 
+    'title1 scroll1'
+    ;
 }
 main .scroll .best_container .scroll_container .scroll_title {
     width: 320px; height: 515px;
@@ -99,6 +102,7 @@ main .scroll .best_container .scroll_container .scroll_title {
     border-radius: 12px;
     padding: 132px 30px 0 30px;
     margin-right: 80px;
+    grid-area: title1;
 }
 main .scroll .main_swiper .scroll_container .scroll_title h1 {
     color: #fff; font-size: 2rem; font-weight: 600;
@@ -108,7 +112,7 @@ main .scroll .main_swiper .scroll_container .scroll_title p {
     color: #fff; line-height: 1.6;
     margin-bottom: 40px;
 }
-main .scroll .main_swiper .scroll_container .scroll_title a {
+main .scroll .main_swiper .scroll_container .scroll_title .more_btn {
     width: 95px; height: 34px;
     color: #fff;
     border: 1px solid #fff;
@@ -116,9 +120,21 @@ main .scroll .main_swiper .scroll_container .scroll_title a {
     font-size: 0.875rem; font-weight: 500;
     display: flex; justify-content: center; align-items: center;
 }
-main .scroll .main_swiper .scroll_container .scroll_title a img {
+main .scroll .main_swiper .scroll_container .scroll_title .more_btn img {
     width: 14px; height: 14px;
     margin-left: 4px;
+}
+/* btn hover 이벤트 */
+main .scroll .main_swiper .scroll_container .scroll_title .more_btn:hover {
+    color: #000;
+    background: #fff;
+}
+main .scroll .main_swiper .scroll_container .scroll_title .more_btn:hover img {
+    filter: brightness(0%) invert(0);
+}
+
+main .scroll .main_swiper .scroll_container .scroll_section {
+    grid-area: scroll1;
 }
 main .scroll .main_swiper .scroll_container .scroll_section .main_scroll {
     width: 1040px;
@@ -225,6 +241,7 @@ main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper
 /* 할인 시 원가 스타일 */
 .del_price {
     font-size: 1.125rem !important; 
+    font-weight: 400 !important;
     color: #ddd;
     margin-top: 0 !important;
     margin-bottom: 6px;
@@ -253,14 +270,20 @@ main .scroll .best_container .scroll_container .scroll_section .scroll_control_w
 }
 .scroll_section .swiper-button-next {
     width: 40px; height: 40px;
-    background: url(../images/icon_next_active.png) center / cover;
+    background: url(../images/icon_next.png) center / cover;
     margin-top: 0; top: 0; right: 0;
 }
 .scroll_section .swiper-button-prev {
     width: 40px; height: 40px;
-    background: url(../images/icon_next_active.png) center / cover;
+    background: url(../images/icon_next.png) center / cover;
     transform: scaleX(-1);
     margin-top: 0; top: 0; left: 0;
+}
+.scroll_section .swiper-button-next:hover {
+    background: url(../images/icon_next_active.png) center / cover;
+}
+.scroll_section .swiper-button-prev:hover {
+    background: url(../images/icon_next_active.png) center / cover;
 }
 .scroll_section .swiper-button-next::after {
     display: none;
@@ -289,6 +312,11 @@ main .scroll .support_container .scroll_container .scroll_section .main_scroll .
     background: url(../images/img_sup006.jpg) center / cover;
 }
 /* support title css */
+main .scroll .support_container .scroll_container {
+    grid-template-areas: 
+    'scroll2 title2'
+    ;
+}
 main .scroll .support_container .scroll_container .scroll_title {
     width: 320px; height: 515px;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/img_sup_title.jpg);
@@ -297,12 +325,19 @@ main .scroll .support_container .scroll_container .scroll_title {
     border-radius: 12px;
     padding: 132px 30px 0 30px;
     margin-left: 80px;
+    grid-area: title2;
+}
+main .scroll .support_container .scroll_container .scroll_section {
+    grid-area: scroll2;
+}
+/* support swiper 변경 설정*/
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper {
+    flex-flow: row-reverse;
+}
+main .scroll .support_container .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide {
+    margin-left: 50px;
 }
 /* support swiper button, 스크롤바 디자인 변경 */
-.support_container .scroll_section .support_scroll .scroll_title {
-    margin-right: 0;
-    margin-left: 80px;
-}
 main .scroll .support_container .scroll_container .scroll_section .scroll_control_wrap {
     width: 1040px; height: 54px;
     position: relative;
@@ -321,14 +356,20 @@ main .scroll .support_container .scroll_container .scroll_section .scroll_contro
 }
 .support_container  .scroll_section .swiper-button-next {
     width: 40px; height: 40px;
-    background: url(../images/icon_next_active.png) center / cover;
+    background: url(../images/icon_next.png) center / cover;
     margin-top: 0; top: 0; right: 0;
 }
 .support_container  .scroll_section .swiper-button-prev {
     width: 40px; height: 40px;
-    background: url(../images/icon_next_active.png) center / cover;
+    background: url(../images/icon_next.png) center / cover;
     transform: scaleX(-1);
     margin-top: 0; top: 0; left: 0;
+}
+.support_container .swiper-button-next:hover {
+    background: url(../images/icon_next_active.png) center / cover;
+}
+.support_container .swiper-button-prev:hover {
+    background: url(../images/icon_next_active.png) center / cover;
 }
 .support_container  .scroll_section .swiper-button-next::after {
     display: none;
@@ -397,10 +438,14 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_im
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img4 {
     background: url(../images/img_pet_004.jpg);
 }
-main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img img{
-    width: 50px; height: 50px; display: inline-block;
-    border-radius: 25px;    
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img .product_next{
+    width: 50px; height: 50px;
+    background: url(../images/icon_next_btn.png) center / cover;
+    border-radius: 25px;
     position: absolute; right: 20px; bottom: 20px;
+}
+main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img:hover .product_next{
+    background: url(../images/icon_next_btn_hov.png) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt {
     width: 186px;
@@ -435,6 +480,15 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_tx
     width: 12px; height: 12px;
     margin-left: 6px;
 }
+/* btn hover 이벤트 */
+.more_b_btn:hover {
+    color: #fff;
+    background: #000;
+}
+.more_b_btn:hover img {
+    filter: brightness(0%) invert(1);
+}
+
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt .color_chip2 {
     margin-left: 12px;
 }
@@ -524,10 +578,16 @@ main .magazine_wrap .magazine_container .magazine_swiper_wrap {
     width: 800px; height: 272px;
     position: relative;
 }
+/* btn hover 이벤트 */
+main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_info_btn:hover {
+    background: #fff;
+    color: #F29700;
+    border: 1px solid #F29700;
+}
 /* magazine 버튼 */
 .magazine_swiper_wrap .swiper-button-prev {
     width: 40px; height: 40px;
-    background: url(../images/icon_next_active.png) center / cover;
+    background: url(../images/icon_next.png) center / cover;
     transform: scaleX(-1) translateX(11px);
 }
 .magazine_swiper_wrap .swiper-button-prev::after {
@@ -535,11 +595,17 @@ main .magazine_wrap .magazine_container .magazine_swiper_wrap {
 }
 .magazine_swiper_wrap .swiper-button-next {
     width: 40px; height: 40px;
-    background: url(../images/icon_next_active.png) center / cover;
+    background: url(../images/icon_next.png) center / cover;
     transform: translateX(11px);
 }
 .magazine_swiper_wrap .swiper-button-next::after {
     display: none;
+}
+.magazine_swiper_wrap .swiper-button-prev:hover {
+    background: url(../images/icon_next_active.png) center / cover;
+}
+.magazine_swiper_wrap .swiper-button-next:hover {
+    background: url(../images/icon_next_active.png) center / cover;
 }
 main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll {
     width: 660px; height: 272px;
@@ -736,4 +802,8 @@ main .introduce_brand .intro_container .intro_scroll .introduce_contents .more_b
 main .introduce_brand .intro_container .intro_scroll .introduce_contents .more_brand_btn img {
     width: 18px; height: 18px;
     margin-left: 6px;
+}
+main .introduce_brand .intro_container .intro_scroll .introduce_contents .more_brand_btn:hover {
+    color: #F29700;
+    background: #fff;
 }

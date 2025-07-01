@@ -31,7 +31,6 @@ const bestScroll = new Swiper('.best_scroll',{
     navigation:{
         nextEl:'.best_container .swiper-button-next',
         prevEl:'.best_container .swiper-button-prev',
-        
     },
     scrollbar:{
         el:'.best_container .swiper-scrollbar',
@@ -39,8 +38,10 @@ const bestScroll = new Swiper('.best_scroll',{
 })
 const supportScroll = new Swiper('.support_scroll',{
     slidesPerView: 'auto',
-    spaceBetween: 50,
-    autoplay:{delay:3000},
+    /* spaceBetween: 50, */
+    autoplay:{delay:3000,
+        reverseDirection:true,
+    },
     loop:true,
     navigation:{
         nextEl:'.support_container .swiper-button-next',
@@ -50,4 +51,5 @@ const supportScroll = new Swiper('.support_scroll',{
     scrollbar:{
         el:'.support_container .swiper-scrollbar',
     },
+    
 })

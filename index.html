@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <title>포인핸드 스토어 | PAWINHAND Store</title>
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -17,22 +18,77 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/scroll.js" defer></script>
-    <script src="./scripts/btn.js" defer></script>
+    <script src="./scripts/active.js" defer></script>
     <script src="./scripts/class.js" defer></script>
 </head>
 <body>
     <header>
         <div id="main_header">
+            <p class="menu"><a href="#"><img src="./images/icon_menu.png" alt=""></a></p>
             <h1><a href="#"><img src="./images/logo_desk.png" alt="포인핸드 스토어"></a></h1><!-- 로고 -->
             <nav>
                 <ul class="gnb">
-                    <li><a href="#">PRODUCT</a></li>
-                    <li><a href="#">MAGAZINE</a></li>
-                    <li><a href="#">DONATION</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">PAWINHAND</a></li>
+                    <li>
+                        <a href="#">PRODUCT</a>
+                        <!-- lnb 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb">
+                                <li class="lnb_title"><a href="#">전체상품 <img src="./images/icon_next_arrow.png" alt=""></a></li>
+                                <li><a href="#">반려용품</a></li>
+                                <li><a href="#">생활용품</a></li>
+                                <li><a href="#">후원굿즈</a></li>
+                                <li><a href="#">매거진</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">MAGAZINE</a>
+                    </li>
+                    <li>
+                        <a href="#">DONATION</a>
+                        <!-- lnb 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb">
+                                <li class="lnb_title"><a href="#">후원/기부 <img src="./images/icon_next_arrow.png" alt=""></a></li>
+                                <li><a href="#">포인핸드 후원 소개</a></li>
+                                <li><a href="#">포인기부 소개</a></li>
+                                <li><a href="#">일반후원/정기후원</a></li>
+                                <li><a href="#">후원/기부 내역 확인</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">NEWS</a>
+                        <!-- lnb 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb">
+                                <li  class="lnb_title"><a href="#">소식 <img src="./images/icon_next_arrow.png" alt=""></a></li>
+                                <li><a href="#">포인핸드 소식</a></li>
+                                <li><a href="#">캠페인</a></li>
+                                <li><a href="#">입양후기</a></li>
+                                <li><a href="#">실종/제보</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">PAWINHAND</a>
+                        <!-- lnb 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb">
+                                <li class="lnb_title"><a href="#">포인핸드 <img src="./images/icon_next_arrow.png" alt=""></a></li>
+                                <li><a href="#">포인핸드 소개</a></li>
+                                <li><a href="#">포인핸드 활동</a></li>
+                                <li><a href="#">포인핸드 보호소</a></li>
+                                <li><a href="#">포인핸드 지원/혜택</a></li>
+                                <li class="lnb_title sub_title1"><a href="#">문의하기 <img src="./images/icon_next_arrow.png" alt=""></a></li>
+                                <li class="lnb_title sub_title2"><a href="#">공지사항 <img src="./images/icon_next_arrow.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
+            <!-- 테블릿/모바일로고 위치 -->
+            <h1 class="logo_typo"><a href="#"><img src="./images/logo_typo.png" alt="포인핸드 스토어"></a></h1>
             <div class="right_wrap">
                 <a href="#" class="search"><img src="./images/icon_search.png" alt="검색"></a>
                 <a href="#" class="cart"><img src="./images/icon_cart_emp.png" alt="장바구니"></a>
@@ -289,6 +345,12 @@
         <section class="scroll scroll_support">
             <div class="support_container main_swiper">
                 <div class="scroll_container">
+                    <div class="scroll_title">
+                        <!-- title bg img -->
+                        <h1>SUPPORT<br>GOODS</h1>
+                        <p>반려동물을 키우지 않는 분들도 편안하게 사용할 수 있도록 포인핸드가 제작한 제품으로 유기동물을 후원해주세요.</p>
+                        <a href="#" class="more_btn">더보기<img src="./images/icon_arrow_more.png" alt=""></a>
+                    </div>
                     <!-- support scroll swiper -->
                     <div class="scroll_section">
                         <div class="support_scroll main_scroll swiper">
@@ -456,12 +518,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="scroll_title">
-                        <!-- title bg img -->
-                        <h1>SUPPORT GOODS</h1>
-                        <p>반려동물을 키우지 않는 분들도 편안하게 사용할 수 있도록 포인핸드가 제작한 제품으로 유기동물을 후원해주세요.</p>
-                        <a href="#" class="more_btn">더보기<img src="./images/icon_arrow_more.png" alt=""></a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -479,7 +535,7 @@
                 <div class="pet_product_container">
                     <div class="pet_product pet_product1">
                         <a href="#" class="product_img product_img1">
-                            <img src="./images/icon_next_btn.png" alt="">
+                            <p class = product_next></p>
                         </a>
                         <a href="#" class="product_txt">
                             <h2>포인핸드 목줄</h2>
@@ -490,7 +546,7 @@
                     </div>
                     <div class="pet_product pet_product2">
                         <a href="#" class="product_img product_img2">
-                            <img src="./images/icon_next_btn.png" alt="">
+                            <p class = product_next></p>
                         </a>
                         <a href="#" class="product_txt">
                             <h2>포인핸드 강아지 H형<br>하네스 가슴줄</h2>
@@ -503,7 +559,7 @@
                     </div>
                     <div class="pet_product pet_product3">
                         <a href="#" class="product_img product_img3">
-                            <img src="./images/icon_next_btn.png" alt="">
+                            <p class = product_next></p>
                         </a>
                         <a href="#" class="product_txt">
                             <h2>포인핸드 강아지 Y형<br>하네스 가슴줄</h2>
@@ -515,7 +571,7 @@
                     </div>
                     <div class="pet_product pet_product4">
                         <a href="#" class="product_img product_img4">
-                            <img src="./images/icon_next_btn.png" alt="">
+                            <p class = product_next></p>
                         </a>
                         <a href="#" class="product_txt">
                             <h2>포인핸드 반려동물<br>입양 수첩</h2>
