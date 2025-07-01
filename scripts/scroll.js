@@ -38,7 +38,6 @@ const bestScroll = new Swiper('.best_scroll',{
 })
 const supportScroll = new Swiper('.support_scroll',{
     slidesPerView: 'auto',
-    /* spaceBetween: 50, */
     /* autoplay:{delay:3000,
         reverseDirection:true,
     }, */
