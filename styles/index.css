@@ -392,7 +392,7 @@ main .ad_bnr_container{
 main .ad_bnr_container .ad_bnr {
     margin: 0 auto;
     width: 1440px; height: 260px;
-    background: url(../images/img_ad_001.jpg) center / cover;
+    background: url(../images/img_ad_001.jpg) right / cover;
     position: relative;
 }
 main .ad_bnr_container .ad_bnr p{
@@ -409,7 +409,6 @@ main .pet_sup_container {
     padding: 120px 0;
 }
 main .pet_sup_container .pet_sup {
-    width: 1440px;
     text-align: center;
     margin: 0 auto;
 }
@@ -418,8 +417,9 @@ main .pet_sup_container .pet_sup h1 {
     margin-bottom: 120px;
 }
 main .pet_sup_container .pet_sup .pet_product_container {
+    width: max-content;
     display: flex;
-    margin-bottom: 120px;
+    margin: 0 auto 120px
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product {
     margin-right: 80px;

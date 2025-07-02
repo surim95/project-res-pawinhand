@@ -24,9 +24,6 @@ body header #main_header {
     align-items: center;
 }
 body header #main_header h1 {}
-body header #main_header .logo_typo, body header #main_header .menu {
-    display: none;
-}
 body header #main_header h1 a {
     width: 151px;
     display: block;
@@ -148,6 +145,10 @@ body header .ad .ad_close_btn{
 body header .ad .ad_close_btn img{
     width: 100%;
 }
+/* 테블릿, 모바일 메뉴 영역 */
+body header #main_header .logo_typo, body header #main_header .menu_container {
+    display: none;
+}
 /* header end */
 /* footer start */
 body footer {
@@ -155,7 +156,7 @@ body footer {
     background: #FFE8A4;
 }
 body footer .foot  {
-    width: 1440px;
+    /* width: max-content; */
     position: relative;
     margin: 0 auto;
     padding: 46px 0;
@@ -170,7 +171,9 @@ body footer .foot  .sns_wrap a{
 }
 body footer .foot  .sns_wrap a:last-child{margin-right: 0;}
 body footer .foot  .sns_wrap a img{}
-body footer .foot  .left_wrap{}
+body footer .foot  .left_wrap{
+    width: max-content;
+}
 body footer .foot  .left_wrap .fnb{
     display: flex;
     width: max-content;

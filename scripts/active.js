@@ -1,10 +1,15 @@
+document.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+});
+
 /* 헤더 광고 닫기 버튼 */
 const closeAdBtn = document.querySelector('.ad_close_btn');
 const headerAd = document.querySelector('.ad');
 console.log(closeAdBtn, headerAd)
-closeAdBtn.addEventListener('click',(e)=>{
+closeAdBtn.addEventListener('click',()=>{
     headerAd.style.display = 'none';
-    e.preventDefault();//태그의 기본이벤트 막기
 });
 
 /* 더보기 버튼 복사/붙여넣기 */
