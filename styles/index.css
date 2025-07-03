@@ -91,7 +91,7 @@ main .scroll .main_swiper .product_fillter a::before {
     margin: 0 18px;
 }
 main .scroll .main_swiper .scroll_container {
-    width: 75%; overflow: hidden;
+    width: 75%; overflow: visible;
     display: grid;
     margin: 0 auto;
 }
@@ -129,7 +129,7 @@ main .scroll .main_swiper .scroll_container .scroll_title .more_btn {
     display: flex; justify-content: center; align-items: center;
 }
 main .scroll .main_swiper .scroll_container .scroll_title .more_btn img {
-    width: 14px; height: 14px;
+    width: 14px;
     margin-left: 4px;
 }
 /* btn hover 이벤트 */
@@ -181,7 +181,7 @@ main .scroll .best_container .scroll_container .scroll_section .main_scroll .swi
     background: url(../images/img_best006.jpg) center / cover;
 }
 main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn {
-    width: 34px; height: 34px;
+    width: 34px;
     border-radius: 17px;
     border: 1px solid #ddd;
     display: block;
@@ -261,13 +261,13 @@ main .scroll_best .best_container .scroll_container .scroll_section .best_scroll
 /* swiper 스크롤바, 버튼 */
 main .scroll .main_swiper .scroll_container .scroll_section {}
 main .scroll .best_container .scroll_container .scroll_section .scroll_control_wrap {
-    width: 1040px; height: 54px;
+    width: 100%; height: 54px;
     position: relative;
     bottom: -12px;
 }
 /* best swiper button, 스크롤바 디자인 변경 */
 .scroll_section .scroll_control_wrap .swiper-scrollbar{
-    width: 888px;
+    width: 80%;
     bottom: 18px;
     left: 0;
 }
@@ -354,14 +354,14 @@ main .scroll .support_container .scroll_container .scroll_section .main_scroll .
 }
 /* support swiper button, 스크롤바 디자인 변경 */
 main .scroll .support_container .scroll_container .scroll_section .scroll_control_wrap {
-    width: 1040px; height: 54px;
+    width: 100%; height: 54px;
     position: relative;
     bottom: -32px;
 }
 .support_container .scroll_section .scroll_control_wrap .swiper-scrollbar{
-    width: 888px;
+    width: 80%;
     bottom: 18px;
-    left: 151px;
+    right: 0; left: auto;
 }
 .support_container  .scroll_section .scroll_control_wrap .swiper-scrollbar .swiper-scrollbar-drag{
     background: #F29700;
@@ -420,24 +420,24 @@ main .pet_sup_container {
 main .pet_sup_container .pet_sup {
     text-align: center;
     margin: 0 auto;
+    padding: 0 240px;
 }
 main .pet_sup_container .pet_sup h1 {
     font-size: 2rem; font-weight: 600;
     margin-bottom: 120px;
 }
 main .pet_sup_container .pet_sup .pet_product_container {
-    width: 75%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 120px
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product {
-    /* margin-right: 80px; */
-    width: 21%; height: max-content;
+    width: 21%;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product:last-child {margin-right: 0;}
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img {
-    width: 100%; height: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 150px;
     position: relative;
     display: block;
@@ -455,21 +455,21 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_im
     background: url(../images/img_pet_004.jpg) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img .product_next{
-    width: 50px; height: 50px;
+    width: 20%;
+    aspect-ratio: 1 / 1;
     background: url(../images/icon_next_btn.png) center / cover;
     border-radius: 25px;
-    position: absolute; right: 20px; bottom: 20px;
+    position: absolute; right: 6%; bottom: 6%;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_img:hover .product_next{
     background: url(../images/icon_next_btn_hov.png) center / cover;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt {
-    width: 186px;
     margin: 40px auto 0;
-    display: block;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product  .product_txt h2 {
     font-size: 1.25rem; font-weight: 600; line-height: 1.4;
+    margin-top: 40px;
 }
 main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_txt .color_chip {
     width: 12px; height: 12px; border-radius: 6px;
@@ -493,7 +493,7 @@ main .pet_sup_container .pet_sup .pet_product_container .pet_product .product_tx
     display: flex; justify-content: center; align-items: center;
 }
 .more_b_btn img {
-    width: 12px; height: 12px;
+    width: 12px;
     margin-left: 6px;
 }
 /* btn hover 이벤트 */
@@ -541,18 +541,22 @@ main .magazine_wrap .magazine_container {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 34px;
 }
 main .magazine_wrap .magazine_container .magazine_left {
+    width: 676px;
     display: flex;
-
+    align-items: center;
+    margin-right: 34px;
 }
 main .magazine_wrap .magazine_container .magazine_left .title_img {
-    width: 306px; height: 416px;
-    background: url(../images/img_magazine001.jpg) center / cover;
+    width: 306px;
+    display: inline-block;
     margin-right: 30px;
     box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
     border: 1px solid #f0f0f0;
+}
+main .magazine_wrap .magazine_container .magazine_left .title_img img {
+    width: 100%;
 }
 main .magazine_wrap .magazine_container .magazine_left .magazine_contents {
     text-align: left;
@@ -592,7 +596,8 @@ main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_
 }
 main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_info_btn img {}
 main .magazine_wrap .magazine_container .magazine_swiper_wrap {
-    width: 800px; height: 272px;
+    width: calc(800 / 1510 * 100%);
+    height: 272px;
     position: relative;
 }
 /* btn hover 이벤트 */
@@ -605,7 +610,7 @@ main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_
 .magazine_swiper_wrap .swiper-button-prev {
     width: 40px; height: 40px;
     background: url(../images/icon_next.png) center / cover;
-    transform: scaleX(-1) translateX(11px);
+    transform: scaleX(-1) translateX(30%);
 }
 .magazine_swiper_wrap .swiper-button-prev::after {
     display: none;
@@ -613,7 +618,7 @@ main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_
 .magazine_swiper_wrap .swiper-button-next {
     width: 40px; height: 40px;
     background: url(../images/icon_next.png) center / cover;
-    transform: translateX(11px);
+    transform: translateX(30%);
 }
 .magazine_swiper_wrap .swiper-button-next::after {
     display: none;
@@ -625,47 +630,28 @@ main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_
     background: url(../images/icon_next_active.png) center / cover;
 }
 main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll {
-    width: 660px; height: 272px;
+    width: calc(660 / 800 * 100%); height: 272px;
     overflow: hidden;
     margin: 0 auto;
 }
 main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper {}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide {
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide {}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide img {
     width: 200px;
-    background-position: center;
-    background-size: cover;
     border: 1px solid #f0f0f0;
 }
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .swiper-slide:last-child {
-    margin-right: 0;
-}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide1 {
-    background-image: url(../images/img_magazine002.jpg);
-}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide2 {
-    background-image: url(../images/img_magazine003.jpg);
-}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide3 {
-    background-image: url(../images/img_magazine004.jpg);
-}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide4 {
-    background-image: url(../images/img_magazine005.jpg);
-}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide5 {
-    background-image: url(../images/img_magazine006.jpg);
-}
-main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_scroll .swiper-wrapper .slide6 {
-    background-image: url(../images/img_magazine007.jpg);
-}
 main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_bg {
-    width: 694px; height: 211px;
-    background: url(../images/img_bg001.png) bottom / cover;
-    position: absolute; left: 50%; bottom: 6px;
-    transform: translateX(-50%);
+    width: calc(694 / 800 * 100%);
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+main .magazine_wrap .magazine_container .magazine_swiper_wrap .magazine_bg img {
+    width: 100%;
+    height: 211px;
 }
 
 /* 7행 review */
 main .review {
+    width: 100%;
     text-align: center;
     padding: 120px 0;
 }
@@ -674,38 +660,30 @@ main .review .review_container  h1 {
     font-size: 2rem; font-weight: 600;
     margin-bottom: 80px;
 }
-main .review .review_container .review_wrap {}
+main .review .review_container .review_wrap {
+    width: 75%;
+    margin: 0 auto;
+}
 main .review .review_container .review_wrap .review_list_wrap {
-    width: 1440px;
-    margin: 0 auto 80px;
+    width: 100%;
+    margin-bottom:80px;
     display: flex;
-    justify-content: space-between;
     text-align: left;
 }
 main .review .review_container .review_wrap .review_list_wrap .review_list {
-    display: inline-block;
-    width: 320px; height: 556px;
+    width: 30%;
+    margin-right: 53px;
 }
 main .review .review_container .review_wrap .review_list_wrap .review_list .review_img {
     border-radius: 10px;
-    width: 320px; height: 400px;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
     margin-bottom: 28px;
 }
-main .review .review_container .review_wrap .review_list_wrap .list1 .review_img{
-    background-image: url(../images/img_review001.jpg);
-}
-main .review .review_container .review_wrap .review_list_wrap .list2 .review_img{
-    background-image: url(../images/img_review002.jpg);
-}
-main .review .review_container .review_wrap .review_list_wrap .list3 .review_img{
-    background-image: url(../images/img_review003.jpg);
-}
-main .review .review_container .review_wrap .review_list_wrap .list4 .review_img{
-    background-image: url(../images/img_review004.jpg);
+main .review .review_container .review_wrap .review_list_wrap .review_list .review_img img{
+    width: 100%
 }
 main .review .review_container .review_wrap .review_list_wrap .review_list .review_contents {
+    width: 100%;
     height: 44px;
     margin-bottom: 20px;
     line-height: 1.4;

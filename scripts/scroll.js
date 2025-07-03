@@ -8,8 +8,16 @@ const mainBnr = new Swiper('.main_bnr_swiper',{
     },
 });
 const magazineScroll = new Swiper('.magazine_scroll',{
-    slidesPerView: 'auto',
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween:30,
+    breakpoints:{
+        1900:{//이상일 때
+            slidesPerView:3,
+        },
+        1300: {
+            slidesPerView:2,
+        }
+    },
     navigation:{
         nextEl:'.magazine_swiper_wrap > .swiper-button-next',
         prevEl:'.magazine_swiper_wrap > .swiper-button-prev',
