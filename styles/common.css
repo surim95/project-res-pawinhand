@@ -173,7 +173,7 @@ body footer .foot  .sns_wrap a{
 body footer .foot  .sns_wrap a:last-child{margin-right: 0;}
 body footer .foot  .sns_wrap a img{}
 body footer .foot  .left_wrap{
-    width: max-content;
+    width: 100%;
 }
 body footer .foot  .left_wrap .fnb{
     display: flex;
@@ -186,6 +186,7 @@ body footer .foot  .left_wrap .fnb li{
 body footer .foot  .left_wrap .fnb li:last-child{margin-right: 0;}
 body footer .foot  .left_wrap .fnb li a{}
 body footer .foot  .left_wrap .contents_wrap{
+    width: 50%;
     display: flex; justify-content: space-between;
 }
 body footer .foot  .left_wrap .contents_wrap .contents {}

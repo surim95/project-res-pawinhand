@@ -255,6 +255,9 @@
     body footer .foot .left_wrap {
         width: 100%;
     }
+    body footer .foot  .left_wrap .contents_wrap{
+        width: 100%;
+    }
     body footer .foot .app_wrap {
         position: static;
         margin-top: 40px;
