@@ -354,7 +354,7 @@
         justify-content: center;
     }
     main .pet_sup_container .pet_sup .pet_product_container .pet_product {
-        width: max-content;
+        width: 30%;
     }
     main .pet_sup_container .pet_sup .pet_product_container .pet_product1 {
         margin-right: 40px;
