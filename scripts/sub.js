@@ -120,11 +120,3 @@ alignOne.addEventListener('click',()=>{
     alignFour.children[0].src = '../images/sub/icon_align4_btn.png';
     alignOne.children[0].src = '../images/sub/icon_align1_btn_act.png';
 });
-
-/* ul 복사 붙여넣기 */
-const productWrap = document.querySelector('.product_wrap');
-const productList = document.querySelector('.product_list');
-const productListClone = productList.cloneNode(true);
-for (let i = 1; i<3; i++){
-    productWrap.appendChild(productListClone);
-}
