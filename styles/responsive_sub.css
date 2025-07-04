@@ -1,0 +1,68 @@
+@media screen and (max-width:1200px) {
+    main {
+        max-width: 1080px;
+    }
+    main .container .product_wrap .product_list {
+        gap: 1%;
+    }
+    main .container .product_wrap .product_list li .thumnail p:first-child{
+        font-size: 0.875rem;
+    }
+    main .container .product_wrap .product_list li .product_info h2 {
+        font-size: 1rem;
+    }
+    main .container .product_wrap .product_list li .product_info p {
+        font-size: 0.813rem;
+    }
+    main .container .product_wrap .product_list li .product_info p em {
+        font-size: 0.813rem;
+    }
+    main .container .product_wrap .product_list li .product_info p span {
+        font-size: 0.813rem;
+    }
+    main .container .product_wrap .product_list li .add_sale {
+        font-size: 0.688rem;
+    }
+    main .container .product_wrap .product_list li .product_info .cart_btn {
+        width: 28px; height: 28px;
+    }
+    main .container .page_btn_wrap button {
+        font-size: 0.875rem; width: 26px; height: 26px;
+    }
+}
+@media screen and (max-width:760px) {
+    main {
+        max-width: 1080px;
+    }
+    main .container .product_wrap .product_list {
+        flex-flow: row wrap;
+    }
+    main .container .product_wrap .product_list li {
+        width: 50%;
+    }
+    main .container .product_wrap .product_list li .thumnail p:first-child{
+        font-size: 0.875rem;
+    }
+    main .container .product_wrap .product_list li .product_info h2 {
+        width: max-content;
+        font-size: 1rem;
+    }
+    main .container .product_wrap .product_list li .product_info p {
+        font-size: 0.813rem;
+    }
+    main .container .product_wrap .product_list li .product_info p em {
+        font-size: 0.813rem;
+    }
+    main .container .product_wrap .product_list li .product_info p span {
+        font-size: 0.813rem;
+    }
+    main .container .product_wrap .product_list li .add_sale {
+        font-size: 0.688rem;
+    }
+    main .container .product_wrap .product_list li .product_info .cart_btn {
+        width: 28px; height: 28px;
+    }
+    main .container .page_btn_wrap button {
+        font-size: 0.875rem; width: 26px; height: 26px;
+    }
+}

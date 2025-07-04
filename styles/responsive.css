@@ -271,10 +271,16 @@
         padding: 0 0;
     }
     body header #main_header .logo_typo a {
-        width: 200px;
+        width: 180px;
+    }
+    body header #main_header .logo_typo a img {
+        width: 100%;
     }
     body header #main_header .menu_container a {
-        width: 28px;
+        width: 24px;
+    }
+    body header #main_header .menu_container a img {
+        width: 100%;
     }
     body header #main_header .right_wrap a {
         width: 28px;

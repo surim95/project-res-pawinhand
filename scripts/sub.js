@@ -113,10 +113,10 @@ const alignFour = document.querySelector('.list_show4');
 const alignOne = document.querySelector('.list_show1');
 
 alignFour.addEventListener('click',()=>{
-    alignFour.children[0].src = '../images/sub/icon_align4_btn_act.png';
-    alignOne.children[0].src = '../images/sub/icon_align1_btn.png';
+    alignFour.children[0].src = './images/sub/icon_align4_btn_act.png';
+    alignOne.children[0].src = './images/sub/icon_align1_btn.png';
 });
 alignOne.addEventListener('click',()=>{
-    alignFour.children[0].src = '../images/sub/icon_align4_btn.png';
-    alignOne.children[0].src = '../images/sub/icon_align1_btn_act.png';
+    alignFour.children[0].src = './images/sub/icon_align4_btn.png';
+    alignOne.children[0].src = './images/sub/icon_align1_btn_act.png';
 });

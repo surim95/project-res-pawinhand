@@ -3,7 +3,8 @@ body * {
 }
 
 main {
-    width: 1440px; margin: 0 auto;
+    max-width: 1440px; margin: 0 auto;
+    min-width: 320px;
 }
 .not_use{
     display: none;
@@ -70,14 +71,14 @@ main .container .product_wrap {
 main .container .product_wrap .product_list {
     width: 100%;
     display: flex;
-    gap: 53px;
+    gap: 1%;
     margin-bottom: 38px;
 }
 main .container .product_wrap .product_list li {
     width: calc((100% / 4));
 }
 main .container .product_wrap .product_list li .thumnail {
-    width: 100%; display:block; height: 320px;
+    width: 100%; display:block; height: max-content;
     position: relative;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -91,9 +92,13 @@ main .container .product_wrap .product_list li .thumnail p:first-child {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px; z-index: 900;
 }
-main .container .product_wrap .product_list li .thumnail p:nth-child(2) {}
+main .container .product_wrap .product_list li .thumnail p:nth-child(2) {
+    /* img의 display block 말고 line-height: 0; 사용하는 방법도 있음. 둘 사이의 알 수 없는 여백 생기는 문제 해결*/
+}
 main .container .product_wrap .product_list li .thumnail p:nth-child(2) img {
+    width: 100%;
     border-radius: 10px;
+    display: block;
 }
 main .container .product_wrap .product_list li .thumnail p:nth-child(2):hover img {
     transform: scale(1.05);
