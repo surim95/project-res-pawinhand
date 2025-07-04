@@ -1,0 +1,156 @@
+main {
+    width: 1440px; margin: 0 auto;
+}
+.not_use{
+    display: none;
+}
+main .container{}
+main .container h1{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 2.5rem; font-weight: 600;
+    margin-bottom: 80px;
+}
+main .container > p {
+    font-size: 0.875rem;
+}
+main .container > p .current_lnb{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+main .container > p a {
+    font-weight: 400; color: #aaa;
+}
+main .container .filter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+main .container .filter .left_filter{
+    align-self: center;
+}
+main .container .filter .left_filter #filter_active {
+    color: #000; font-weight: 500;
+}
+#filter_active {
+    color: #000; font-weight: 500;
+}
+main .container .filter .left_filter .filter_list {
+    font-size: 1.125rem;
+    margin-right: 18px;
+    color: #aaa;
+}
+main .container .filter .left_filter .filter_list:last-child {
+    margin-right: 0;
+}
+main .container .filter .align {
+    align-self: flex-end;
+}
+main .container .filter .align button {
+    width: 32px;
+    margin-bottom: 12px;
+}
+main .container .filter .align button img{
+    width: 100%;
+}
+main .container .filter .align .list_show1 {
+    margin-left: 20px;
+}
+main .container .filter .align .list_show4 {}
+main .container .product_wrap {
+    display: flex; flex-flow: column nowrap;
+}
+main .container .product_wrap .product_list {
+    width: 100%;
+    display: flex;
+    gap: 53px;
+    margin-bottom: 38px;
+}
+main .container .product_wrap .product_list li {
+    width: calc((100% / 4));
+}
+main .container .product_wrap .product_list li .thumnail {
+    width: 100%; display:block; height: 320px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+main .container .product_wrap .product_list li .thumnail p:first-child {
+    position: absolute; left: 0; top: 0;
+    padding: 4px 8px; background: #F29700;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main .container .product_wrap .product_list li .thumnail p:nth-child(2) {}
+main .container .product_wrap .product_list li .thumnail p:nth-child(2) img {
+    border-radius: 10px;
+}
+main .container .product_wrap .product_list li .product_info {
+    margin:20px 0 8px;
+    position: relative;
+}
+main .container .product_wrap .product_list li .product_info h2 {
+    font-size: 1.25rem; font-weight: 500;
+}
+main .container .product_wrap .product_list li .product_info .cart_btn {
+    width: 32px; height: 32px;
+    position: absolute; right: 0; top: 0;
+    border-radius: 16px;
+    border: 1px solid #ddd ;
+}
+main .container .product_wrap .product_list li .product_info .cart_btn img {
+    width: 100%;
+}
+main .container .product_wrap .product_list li .product_info p {
+    display: flex; justify-content: space-between; align-items: center;
+    margin:20px 0 8px;
+    font-size: 1.625rem; font-weight: 600;
+}
+main .container .product_wrap .product_list li .product_info p em {
+    font-size: 1.125rem; font-weight: 600; color: #F29700;
+}
+main .container .product_wrap .product_list li .product_info p .sale {
+}
+main .container .product_wrap .product_list li .product_info p span {
+    color: #ddd; font-size: 1.125rem;
+}
+.del_price {
+    text-decoration: line-through;
+}
+main .container .product_wrap .product_list li .add_sale {
+    background: #F29700;
+    padding: 4px; 
+    width: max-content;
+    font-size:0.875rem; color: #fff;
+}
+main .container .product_wrap .product_list li .score {
+    width: max-content;
+    display: flex; align-items: center;
+    line-height: 14px;
+    font-size: 0.75rem;
+    margin-top: 20px;
+}
+main .container .product_wrap .product_list li .score img {
+    margin-right: 4px;
+}
+main .container .page_btn_wrap {
+    display: flex;
+    width: max-content; margin:0 auto 120px;
+}
+main .container .page_btn_wrap button {
+    width: 30px; height: 30px;
+}
+main .container .page_btn_wrap #page_active {
+    color: #000;
+    font-weight: 500;
+}
+main .container .page_btn_wrap .page {
+    color: #aaa;
+}
+main .container .page_btn_wrap .prev_page {}
+main .container .page_btn_wrap .next_page {}
