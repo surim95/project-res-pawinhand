@@ -590,6 +590,7 @@ main .magazine_wrap .magazine_container .magazine_left .magazine_contents .m_lis
 main .magazine_wrap .magazine_container .magazine_left .magazine_contents .more_info_btn {
     width: 102px; line-height: 30px;
     background: #F29700;
+    border: 1px solid #fff;
     color: #fff; font-size: 0.875rem; font-weight: 500;
     border-radius: 15px;
     display: flex; justify-content: center; align-items: center;

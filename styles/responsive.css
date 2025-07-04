@@ -147,7 +147,7 @@
     }
     main .ad_bnr_container .ad_bnr {
         width: 90%; height: 213px;
-        background: url(../images/img_ad_002.jpg) center / cover;
+        background: url(../images/img_ad_002.jpg) right / cover;
     }
     main .ad_bnr_container .ad_bnr p{
         font-size: 1.5rem;
