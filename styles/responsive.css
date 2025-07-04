@@ -418,6 +418,7 @@
     }
     body footer .foot {
         align-items: center;
+        width: 100%;
     }
     body footer .foot .left_wrap .contents_wrap {
         flex-flow: column;
@@ -439,5 +440,29 @@
     body footer .foot .left_wrap .fnb li:nth-child(3),
     body footer .foot .left_wrap .fnb li:nth-child(4) {
         margin-bottom: 12px;
+    }
+    body footer .foot  .app_wrap {
+        width: max-content;
+        padding: 0 20px;
+        margin-top: 32px;
+    }
+    body footer .foot  .app_wrap .app_down_btn {
+        border-radius: 8px;
+        margin-right: 40px;
+    }
+    body footer .foot  .app_wrap .app_android {
+        margin-right: 0;
+    }
+    body footer .foot  .app_wrap .app_down_btn p {
+        margin-right: 6px;
+    }
+    body footer .foot  .app_wrap .app_down_btn p img {
+        width: 18px;
+    }
+    body footer .foot  .app_wrap .app_down_btn .btn_txt p {
+        font-size: 0.5rem;
+    }
+    body footer .foot  .app_wrap .app_down_btn .btn_txt h1 {
+        font-size: 0.875rem;
     }
 }

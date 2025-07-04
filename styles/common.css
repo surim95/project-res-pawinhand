@@ -195,16 +195,16 @@ body footer .foot  .left_wrap .contents_wrap .contents p {
 body footer .foot  .left_wrap .contents_wrap .contents p:last-child{margin-bottom: 0;}
 body footer .foot  .left_wrap .contents_wrap .contents p em {}
 body footer .foot  .app_wrap {
+    width: 420px;
     position: absolute; top: 118px; right: 20px;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
 }
 body footer .foot  .app_wrap .app_down_btn {
     display: flex;
-    width: 190px; height: 54px;
+    padding: 8.5px 19.5px;
     background: #000;
     border-radius: 10px;
-    align-items: center; justify-content: center;
 }
 body footer .foot  .app_wrap .app_down_btn p {
     margin-right: 10px;
