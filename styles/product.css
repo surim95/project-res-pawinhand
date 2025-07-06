@@ -113,6 +113,7 @@ main .container .product_wrap .product_list li .product_info h2 {
 main .container .product_wrap .product_list li .product_info .cart_btn {
     width: 32px; height: 32px;
     position: absolute; right: 0; top: 0;
+    transform: translateY(-25%);
     border-radius: 16px;
     border: 1px solid #ddd ;
 }
