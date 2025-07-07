@@ -32,6 +32,7 @@ titles.forEach(title => {
 
 /* menu gnb, lnb */
 const menuBtn = document.querySelector('#main_header > a');
+const menuBtnImg = document.querySelector('#main_header > a > img');
 const menuBg = document.querySelector('.menu_container');
 let menuBtnAct = false;
 console.log(menuBtn, menuBg);
@@ -39,9 +40,11 @@ menuBtn.addEventListener('click',()=>{
     if (menuBtnAct) {
         menuBtnAct = false;
         menuBg.style.display = 'none';
+        menuBtnImg.src = './images/icon_menu.png'
     } else {
         menuBg.style.display = 'block';
         menuBtnAct = true;
+        menuBtnImg.src = './images/icon_menu_act.png'
     }
     
 })
@@ -50,6 +53,7 @@ function menuSize(){
     if (width > 1200) {
         menuBg.style.display = 'none';
         menuBtnAct = false;
+        menuBtnImg.src = './images/icon_menu.png'
     }
 }
 window.addEventListener('resize', menuSize);
