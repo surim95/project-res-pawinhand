@@ -9,6 +9,9 @@
     main .scroll {
         padding: 60px 0;
     }
+    body .menu_container {
+        width: 100%;
+    }
     body header #main_header {
         width: 90%;
         position: relative;
@@ -420,6 +423,15 @@
     }
     main .review .review_container .review_wrap .review_list_wrap {
         margin: 0 auto 40px;
+    }
+    main .review .review_container .review_wrap .review_list_wrap .review_list .user_info {
+        flex-flow: column; align-items:flex-start;
+    }
+    main .review .review_container .review_wrap .review_list_wrap .review_list .user_info span::after {
+        display: none;
+    }
+    main .review .review_container .review_wrap .review_list_wrap .review_list .user_info span {
+        margin-bottom: 4px;
     }
     main .review .review_container .review_wrap .review_list_wrap .list2 {
         margin-right: 0;
