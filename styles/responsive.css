@@ -34,6 +34,9 @@
         display: inline-block;
         width: 32px;
     }
+    body header #main_header .right_wrap a {
+        width: 32px;
+    }
     body header #main_ header .menu_container a img {
         width: 100%;
     }
