@@ -30,6 +30,32 @@ titles.forEach(title => {
     });
 });
 
+/* menu gnb, lnb */
+const menuBtn = document.querySelector('#main_header > a');
+const menuBg = document.querySelector('.menu_container');
+let menuBtnAct = false;
+console.log(menuBtn, menuBg);
+menuBtn.addEventListener('click',()=>{
+    if (menuBtnAct) {
+        menuBtnAct = false;
+        menuBg.style.display = 'none';
+    } else {
+        menuBg.style.display = 'block';
+        menuBtnAct = true;
+    }
+    
+})
+function menuSize(){
+    const width = window.innerWidth;
+    if (width > 1200) {
+        menuBg.style.display = 'none';
+        menuBtnAct = false;
+    }
+}
+window.addEventListener('resize', menuSize);
+menuSize();
+
+
 
 /* 장바구니, 검색, 마이페이지 활성화 */
 const searchIcon = document.querySelector('.search img');

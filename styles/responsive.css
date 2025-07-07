@@ -24,8 +24,11 @@
     body #main_header .right_wrap .cart {
         display: none;
     }
-    body header #main_header nav .gnb {
+    body header #main_header > nav .gnb {
         display: none;
+    }
+    body header #main_header > a {
+        display: inline-block;
     }
     body header #main_header .menu_container {
         display: block;
@@ -34,11 +37,11 @@
         display: inline-block;
         width: 32px;
     }
-    body header #main_header .right_wrap a {
-        width: 32px;
-    }
     body header #main_ header .menu_container a img {
         width: 100%;
+    }
+    body header #main_header .right_wrap a {
+        width: 32px;
     }
     body header #main_header .logo_typo {
         display: block;
