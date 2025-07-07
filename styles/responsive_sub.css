@@ -1,24 +1,31 @@
 @media screen and (max-width:1200px) {
     main {
         max-width: 1080px;
+        padding: 0 60px;
     }
     main .container .product_wrap .product_list {
         gap: 1%;
     }
     main .container .product_wrap .product_list li .thumnail p:first-child{
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
     main .container .product_wrap .product_list li .product_info h2 {
         font-size: 1rem;
     }
     main .container .product_wrap .product_list li .product_info p {
-        font-size: 0.813rem;
+        font-size: 0.875rem;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 8px;
     }
     main .container .product_wrap .product_list li .product_info p em {
-        font-size: 0.813rem;
+        font-size: 0.875rem;
     }
     main .container .product_wrap .product_list li .product_info p span {
-        font-size: 0.813rem;
+        font-size: 0.875rem;
+    }
+    main .container .product_wrap .product_list li .score {
+        margin-top: 14px;
     }
     main .container .product_wrap .product_list li .add_sale {
         font-size: 0.688rem;
@@ -32,35 +39,80 @@
 }
 @media screen and (max-width:760px) {
     main {
-        max-width: 1080px;
+        max-width: 720;
+        padding: 0 20px;
+    }
+    main .container h1 {
+        padding-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+    }
+    main .container > p {
+        font-size: 0.625rem;
+    }
+    main .container .filter {
+        flex-flow: column nowrap;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    main .container .filter .left_filter {
+        align-self: flex-start;
+        margin: 12px 0;
+    }
+    main .container .filter .left_filter .filter_list {
+        font-size: 0.875rem;
+        margin-right: 8px;
+    }
+    main .container .filter .align {
+        align-self: flex-start;
+    }
+    main .container .filter .align button {
+        width: 24px;
+    }
+    main .container .filter .align .list_show1 {
+        margin-left: 12px;
     }
     main .container .product_wrap .product_list {
         flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    main .container .product_wrap .product_list:nth-child(2) {
+        margin-top: 10px;
     }
     main .container .product_wrap .product_list li {
-        width: 50%;
+        width: calc(95% / 2);
     }
     main .container .product_wrap .product_list li .thumnail p:first-child{
         font-size: 0.875rem;
     }
     main .container .product_wrap .product_list li .product_info h2 {
         width: max-content;
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
     main .container .product_wrap .product_list li .product_info p {
         font-size: 0.813rem;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        margin: 8px 0;
     }
     main .container .product_wrap .product_list li .product_info p em {
-        font-size: 0.813rem;
+        font-size: 0.625rem;
     }
     main .container .product_wrap .product_list li .product_info p span {
         font-size: 0.813rem;
     }
     main .container .product_wrap .product_list li .add_sale {
-        font-size: 0.688rem;
+        font-size: 0.625rem;
     }
     main .container .product_wrap .product_list li .product_info .cart_btn {
-        width: 28px; height: 28px;
+        width: 28px; height: 28px; top: 24px;
+    }
+    main .container .page_btn_wrap {
+        margin: 40px auto;
     }
     main .container .page_btn_wrap button {
         font-size: 0.875rem; width: 26px; height: 26px;

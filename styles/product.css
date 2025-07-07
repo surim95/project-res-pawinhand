@@ -5,6 +5,7 @@ body * {
 main {
     max-width: 1440px; margin: 0 auto;
     min-width: 320px;
+    padding: 60px;
 }
 .not_use{
     display: none;
@@ -31,7 +32,7 @@ main .container .filter{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #ddd;
 }
 main .container .filter .left_filter{
@@ -52,10 +53,10 @@ main .container .filter .left_filter .filter_list:last-child {
     margin-right: 0;
 }
 main .container .filter .align {
-    align-self: flex-end;
+    transform: translateY(20%);
 }
 main .container .filter .align button {
-    width: 32px;
+    width: 30px;
     margin-bottom: 12px;
 }
 main .container .filter .align button img{

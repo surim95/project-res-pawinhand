@@ -10,6 +10,7 @@
         padding: 60px 0;
     }
     body header #main_header {
+        width: 90%;
         position: relative;
         padding: 0 20px;
         height: 72px;
@@ -268,6 +269,7 @@
         padding: 40px 0;
     }
     body header #main_header {
+        width: 90%;
         padding: 0 0;
     }
     body header #main_header .logo_typo a {
@@ -277,13 +279,16 @@
         width: 100%;
     }
     body header #main_header .menu_container a {
-        width: 24px;
+        width: 28px;
     }
     body header #main_header .menu_container a img {
         width: 100%;
     }
     body header #main_header .right_wrap a {
         width: 28px;
+    }
+    body header .ad .ad_close_btn {
+        right: 20px;
     }
     main .main_bnr_wrap .swiper .swiper-wrapper .swiper-slide {
         height: 620px;
