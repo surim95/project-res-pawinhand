@@ -15,7 +15,6 @@ body header {
     position: sticky; top: 0;
     background: #fff;
     z-index: 999;
-    border-bottom: 1px solid #f5f5f5;
 }
 body header #main_header {
     width: 75%;

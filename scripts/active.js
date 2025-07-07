@@ -9,25 +9,28 @@ document.querySelectorAll('a').forEach(a => {
 /* 헤더 광고 닫기 버튼 */
 const closeAdBtn = document.querySelector('.ad_close_btn');
 const headerAd = document.querySelector('.ad');
-console.log(closeAdBtn, headerAd)
+/* 헤더 border-bottom */
+const header = document.querySelector('header');
+//console.log(closeAdBtn, headerAd, header)
 closeAdBtn.addEventListener('click',()=>{
     headerAd.style.display = 'none';
+    header.style.borderBottom = '1px solid #f5f5f5'
 });
 
 /* 더보기 버튼 복사/붙여넣기 */
 const moreBtn = document.querySelector('.pet_sup .more_b_btn');
 const reviewMore = document.querySelector('.review_container .review_wrap');
 const moreBtnClone = moreBtn.cloneNode(true);
-console.log(moreBtn, reviewMore, moreBtnClone);
+//console.log(moreBtn, reviewMore, moreBtnClone);
 reviewMore.appendChild(moreBtnClone);
 
 /* 장바구니, 검색, 마이페이지 활성화 */
 const searchIcon = document.querySelector('.search img');
 const cartIcon = document.querySelector('.cart img');
 const myIcon = document.querySelector('.mypage img');
-console.log(searchIcon, cartIcon, myIcon);
+//console.log(searchIcon, cartIcon, myIcon);
 const mouseEvent = [searchIcon, cartIcon, myIcon];
-console.log(mouseEvent);
+//console.log(mouseEvent);
 
 mouseEvent.forEach(function(icon) {
     icon.addEventListener('mouseover',()=>{
@@ -51,7 +54,7 @@ mouseEvent.forEach(function(icon) {
 })
 
 const cartPlusBtn = document.querySelectorAll('.cart_btn');
-console.log(cartPlusBtn);
+//console.log(cartPlusBtn);
 let cartAct = false;
 cartPlusBtn.forEach(btn => {
     btn.addEventListener('click',(e)=>{
@@ -94,3 +97,4 @@ titles.forEach(title => {
     img.src = './images/icon_next_arrow.png'; // 마우스 아웃 시 원래 이미지로 복귀
     });
 });
+
