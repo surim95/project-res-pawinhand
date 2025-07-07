@@ -181,7 +181,7 @@ main .scroll .best_container .scroll_container .scroll_section .main_scroll .swi
     background: url(../images/img_best006.jpg) center / cover;
 }
 main .scroll .main_swiper .scroll_container .scroll_section .main_scroll .swiper-wrapper .swiper-slide .scroll_img .cart_btn {
-    width: 34px;
+    width: 34px; height: 34px;
     border-radius: 17px;
     border: 1px solid #ddd;
     display: block;
