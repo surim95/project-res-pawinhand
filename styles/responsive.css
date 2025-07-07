@@ -446,6 +446,9 @@
         align-items: center;
         justify-content: center;
     }
+    body footer .foot .left_wrap .fnb li a {
+        font-size: 0.875rem;
+    }
     body footer .foot .left_wrap .fnb li:nth-child(4) {
         margin-right: 0;
     }
@@ -454,6 +457,9 @@
     body footer .foot .left_wrap .fnb li:nth-child(3),
     body footer .foot .left_wrap .fnb li:nth-child(4) {
         margin-bottom: 12px;
+    }
+    body footer .foot .left_wrap .contents_wrap .contents {
+        font-size: 0.875rem;
     }
     body footer .foot  .app_wrap {
         width: max-content;
@@ -467,6 +473,7 @@
     body footer .foot  .app_wrap .app_android {
         margin-right: 0;
     }
+    
     body footer .foot  .app_wrap .app_down_btn p {
         margin-right: 6px;
     }
