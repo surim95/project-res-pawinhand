@@ -169,6 +169,9 @@ body .menu_container {
     font-size: 1.125rem; font-weight: 500;
     color: #000;
 }
+.menu_container > nav .gnb > li > a:hover {
+    color: #F29700;
+}
 .menu_container > nav .gnb li .lnb {
     padding-top: 12px;
 }
