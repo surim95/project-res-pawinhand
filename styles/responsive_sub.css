@@ -85,7 +85,7 @@
         width: calc(95% / 2);
     }
     main .container .product_wrap .product_list li .thumnail p:first-child{
-        font-size: 0.875rem;
+        font-size: 0.75rem;
     }
     main .container .product_wrap .product_list li .product_info h2 {
         width: max-content;
